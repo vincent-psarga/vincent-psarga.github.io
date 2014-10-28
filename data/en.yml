@@ -1,0 +1,25 @@
+--- 
+education: 
+  title: Education
+  data: 
+    - 
+      dates: 2005-2009
+      title: "PhD, computer science"
+      where: "Université de Franche-Comté"
+      where_cls: where-ufc
+    - 
+      dates: 2004-2005
+      title: "Master, computer science - distributed systems"
+      where: "Université de Franche-Comté"
+      where_cls: where-ufc
+experience:
+  title: Experience
+  data:
+hobbie: 
+  title: Hobbies
+  data:
+    - "I practice various outdoor activities such as hiking, climbing and skiing."
+    - "I also practive Historical European Medieval Arts (mainly longsword, dagger and axe) and medieval reenactment with the Ad Honores association."
+resume: 
+  data: ""
+  title: Resumé

@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+
+		</header>
+		<nav>
+			<ul>
+				<li>
+					<a href="#resume">{{ resume.title }}</a>
+				</li>
+				<li>
+					<a href="#experience">{{ experience.title }}</a>
+				</li>
+				<li>
+					<a href="#education">{{ education.title }}</a>
+				</li>
+				<li>
+					<a href="#hobbies">{{ hobbie.title }}</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section id="resume">
+				<h1>{{ resume.title }}</h1>
+			</section>
+			<section id="experience">
+				<h1>{{ experience.title }}</h1>
+				{{#each experience.data}}
+				<article>
+					<h2>{{ this.title}} </h2>
+					<span class="dates">{{ this.dates }}</span>
+					<span class="where{{this.where_classes}}">{{ this.where}} </span>
+					{{{md this.body }}}
+					<p class="keywords">
+						<ul>
+							{{#each this.keywords}}
+								<li>{{ this }}</li>
+							{{/each}}
+						</ul>
+					</p>
+				</article>
+				{{/each}}
+			</section>
+			<section id="education">
+				<h1>{{ education.title }}</h1>
+				{{#each education.data}}
+				<article>
+					<h2>{{ this.title }}</h2>
+					<span class="dates">{{ this.dates }}</span>
+					<span class="where{{this.where_classes}}">{{ this.where}} </span>
+				</article>
+				{{/each}}
+			</section>
+			<section id="hobbies">
+				<h1>{{ hobbie.title }}</h1>
+				{{#each hobbie.data }}
+				  <p>{{ this}}</p>
+				 {{/each}}
+			</section>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
