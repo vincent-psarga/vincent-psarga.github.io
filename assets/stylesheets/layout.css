@@ -41,6 +41,7 @@ h1, h2, h3 {
 header #contacts li {
 	list-style-type: none;
 	display: inline-block;
+	margin-right: 5px;
 }
 
 header #contacts li a {
@@ -50,10 +51,6 @@ header #contacts li a {
 	width: 20px;
 	height: 20px;
 	overflow: hidden;
-}
-
-header #contacts li a:hover {
-	width: auto;
 }
 
 /* -- Education */
@@ -81,6 +78,7 @@ nav ul.langs {
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
+	margin-right: 10px;
 }
 
 nav a {
