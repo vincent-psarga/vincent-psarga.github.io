@@ -138,6 +138,10 @@ nav a:hover {
 	background-image: url('../images/logos/lifc.png');
 }
 
+#experience .keywords {
+	clear: both;
+}
+
 #experience .keywords li {
 	list-style-type: none;
 	display: inline-block;
