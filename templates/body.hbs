@@ -8,9 +8,10 @@
 	<body>
 		<header>
 			<h1>Vincent Prêtre</h1>
-			<div id="address">{{{md resume.address}}}</div>
+			<span class="headline">{{ about.title }}</span>
+			<div id="address">{{{md about.address}}}</div>
 			<ul id="contacts">
-				{{#each resume.contacts}}
+				{{#each about.contacts}}
 				<li class="{{this.type}}">
 					<a href="{{this.value}}" title="{{this.title}}">
 						<i class="icon-{{this.type}}"></i> {{this.title}}

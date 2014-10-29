@@ -1,5 +1,6 @@
 --- 
-resume: 
+about:
+  name: "Vincent Prêtre"
   address: |
     21 place Gustave Courbet  
     25290 Ornans  
@@ -21,6 +22,9 @@ resume:
       type: skype
       title: "Skype"
       value: "skype:vincentpretre?call"
+
+resume:
+  empty: 1
 
 experience:
   data:
