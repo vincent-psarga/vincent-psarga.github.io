@@ -65,6 +65,7 @@ class CVMaker
 
   def context
     localize_context
+
     update_places(@context['experience']['data'])
     update_places(@context['education']['data'])
 
