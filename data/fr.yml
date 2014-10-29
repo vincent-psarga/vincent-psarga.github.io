@@ -1,51 +1,16 @@
 --- 
 resume: 
   title: "A propos"
-  data: ""
-  address: |
-    21 place Gustave Courbet  
-    25290 Ornans  
-    FRANCE
-  contacts:
-    -
-      type: mail
-      title: "Email"
-      value: "mailto://vincent.pretre[at]gmail.com"
-    -
-      type: github
-      title: "GitHub"
-      value: "https://github.com/vincent-psarga/"
-    -
-      type: linkedin
-      title: "LinkedIn"
-      value: "https://www.linkedin.com/in/vincentpretre"
-    -
-      type: skype
-      title: "Skype"
-      value: "skype:vincentpretre?call"
+  body: ""
 
 experience:
   title: Expérience
   data:
-    -
-      id: 5
+    5:
       title: "Développeur web (Rails, Ember.js)"
-      where-uid: "smartesting"
-      dates: "2012 - 2014"
       body: ""
-      keywords:
-        - Ruby
-        - Ruby on Rails
-        - Javascript
-        - Ember.js
-        - Puppet
-        - Intégration continue
-        - Déploiement continu
-    -
-      id: 4
+    4:
       title: "Développeur web (Plone, Django)"
-      where-uid: "zest"
-      dates: "2009 - 2012"
       body: |
         J’ai été durant plus d’un an responsable et principal développeur du site [Prettig Personeel](http://www.prettigpersoneel.nl), un logiciel de gestion de personnel en ligne.
         Mon rôle consistait à développer de nouvelles fonctionnalités, refactoriser le code et gérer les releases ainsi que le déploiement sur les sites de test et de production.
@@ -60,104 +25,49 @@ experience:
         J’ai aussi procedé à la mise à jour du site [Den Haag Ontmoetding](http://www.denhaagontmoetdenhaag.nl) (site permettant de gèrer les projets inter-écoles de la Haye) afin de corriger un certain nombre de problèmes.
         J’ai créé la troisième version de [Franel] (franel.eu) (une plateforme d’apprentissage du Néerlandais et du Français). Ce site repose sur un service web contenant l’ensemble des données du systèmes (utilisateurs, leçons, résultats) et une base de données MySQL afin de cacher les données et éviter les appels rop fréquents au service web.
         J’ai été chargé des mises à jour de ces quatre derniers sites puisque je suis généralement responsable des projets développés sous Django. Je suis aussi chargé des tâches liées à Javascript.
-
-      keywords:
-        - Python
-        - Plone
-        - Zope
-        - Django
-        - Javascript
-        - jQuery
-        - open-source
-    -
-      id: 3
+    3:
       title: "Doctorat d’informatique (Validation des services web à l’aide de la génération automatique de tests)"
-      where-uid: "lifc"
-      dates: "2005 - 2009"
       body: |
         J'ai créé la plateforme iTaC-QoS (iTaC Tests and Certifies Quality of Services). Celle-ci permet de valider des services web grâce à la génération de tests à partir de modèles UML.
         Cette plateforme permet une automatisation complète du processus de test et de validation, la seule tâche devant être réalisée manuellement est la création du modèle.
         
         Quatre articles concernant iTaC-QoS ont été publiés dans des journaux, conférences et workshop internationaux. De plus, j’ai effectué de nombreuses heures d’enseignement durant ces trois années, sur des domaines variés (bureautique, EJB, Intelligence Artificielle, Découverte de Java ...)
-      keywords:
-        - Python
-        - Java
-        - Web Services
-        - génération de tests
-        - UML
-        - Test Designer
-    -
-      id: 2
+    2:
       title: "Stage de master recherche (Multi-agents et composants pour la transmission vidéo)"
-      where-uid: "lifc"
-      dates: "2005"
       body: |
         Lors de mon stage de master, j’ai étudié les apports des paradigmes multi-agents et composants dans le cadre de la transmission de vidéo.
         
         Ces recherches ont conduit à la création d’une plateforme permettant d’adapter la vidéo à la volée en fonction du récepteur, de gérer les congestions réseaux et de répartir la charge entre les différents adaptateurs.
-      keywords:
-       - Python
-       - multi-agents
-       - composants
-    -
-      id: 1
+    1:
       title: "Développeur web (PHP)"
-      where-uid: "bleu-vert"
-      dates: "2003"
       body: |
         Lors de mon stage chez Bleu-Vert, j’ai travaillé sur deux sites:
         
-         - [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
-         - [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
+         * [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
+         * [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
         
         Ces sites ont été développés avec PHP/MySQL. Le système de templates Smarty a été utilisé afin de permettre la collaboration avec un graphiste chargé du style du site
 
-      keywords:
-      - PHP
-      - MySQL
-      - Smarty
+keywords:
+  continuous-integration: "Intégration continue"
+  continuous-deployement: "Déploiement continu"
+  test-generation: "Génération de tests"
+  components: composants
 
 education: 
   title: Diplômes
   data: 
-    - 
+    2:
       title: "Doctorat d'informatique"
-      dates: 2005-2009
-      where-uid: "ufc"
-    - 
+    1:
       title: "Master informatique - systèmes distribués"
-      dates: 2004-2005
-      where-uid: "ufc"
 
 hobbie:
   title: "Loisirs"
-  data: |
+  body: |
     Je pratique diverses activitées sportives en extérieur telles que la randonnée, l'escalade et le ski.
     Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reocnstitution au sein de l'association Ad Honores. 
 
 places:
   ufc: 
     name: "Université de Franche-Comté"
-    link: "http://www.univ-fcomte.fr/"
-    location: "Besançon"
-    country: "France"
-  lifc:
-    name: "LIFC"
-    link: "http://lifc.univ-fcomte.fr"
-    location: "Besançon"
-    country: "France"
-  bleu-vert:
-    name: "Bleu-vert"
-    link: "http://www.bleu-vert.ch"
-    location: "Lausanne"
-    country: "Suisse"
-  zest:
-    name: "Zest software"
-    link: "http://www.zestsoftware.nl"
-    location: "Rotterdam"
-    country: "Pays-Bas"
-  smartesting:
-    name: "Smartesting"
-    link: "http://www.smartesting.com"
-    location: "Besançon"
-    country: "France"
