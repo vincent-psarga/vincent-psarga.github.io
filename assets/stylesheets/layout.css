@@ -66,8 +66,16 @@ header #contacts li a:hover {
 }
 
 /* -- Navigation */
-nav ul {
+nav {
 	margin-bottom: 15px;
+}
+
+nav ul.sections {
+	float: left;
+}
+
+nav ul.langs {
+	float: right;
 }
 
 nav ul li {
