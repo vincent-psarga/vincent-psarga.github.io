@@ -3,14 +3,14 @@ resume:
   title: "A propos"
   data: ""
   address: |
-    21 place Gustave Courbet
-    25290 Ornans
+    21 place Gustave Courbet  
+    25290 Ornans  
     FRANCE
   contacts:
     -
-      type: email
+      type: mail
       title: "Contacter par email"
-      value: "vincent.pretre[at]gmail.com"
+      value: "mailto://vincent.pretre[at]gmail.com"
     -
       type: github
       title: "Mon profil GitHub"

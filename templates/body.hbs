@@ -1,10 +1,23 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href="assets/stylesheets/icons.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="assets/stylesheets/layout.css" media="all" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<header>
-
+			<h1>Vincent Prêtre</h1>
+			<div id="address">{{{md resume.address}}}</div>
+			<ul id="contacts">
+				{{#each resume.contacts}}
+				<li class="{{this.type}}">
+					<a href="{{this.value}}" title="{{this.title}}">
+						<i class="icon-{{this.type}}"></i> {{this.title}}
+					</a>
+				</li>
+				{{/each}}
+			</ul>
 		</header>
 		<nav>
 			<ul>
@@ -24,13 +37,13 @@
 		</nav>
 		<main>
 			<section id="resume">
-				<h1>{{ resume.title }}</h1>
+				<h2>{{ resume.title }}</h2>
 			</section>
 			<section id="experience">
-				<h1>{{ experience.title }}</h1>
+				<h2>{{ experience.title }}</h2>
 				{{#each experience.data}}
 				<article>
-					<h2>{{ this.title}} </h2>
+					<h3>{{ this.title}} </h3>
 					<span class="dates">{{ this.dates }}</span>
 					<span class="where{{this.where_classes}}">{{ this.where}} </span>
 					{{{md this.body }}}
@@ -45,21 +58,22 @@
 				{{/each}}
 			</section>
 			<section id="education">
-				<h1>{{ education.title }}</h1>
+				<h2>{{ education.title }}</h2>
 				{{#each education.data}}
 				<article>
-					<h2>{{ this.title }}</h2>
+					<h3>{{ this.title }}</h3>
 					<span class="dates">{{ this.dates }}</span>
 					<span class="where{{this.where_classes}}">{{ this.where}} </span>
 				</article>
 				{{/each}}
 			</section>
 			<section id="hobbies">
-				<h1>{{ hobbie.title }}</h1>
+				<h2>{{ hobbie.title }}</h2>
 				{{{md hobbie.data }}}
 			</section>
 		</main>
 		<footer>
+			<p>Hosted by <a href="https://pages.github.io">Github.io</a> / Icons from <a href="https://icomoon.io/">icoMoon</a></p>
 		</footer>
 	</body>
 </html>

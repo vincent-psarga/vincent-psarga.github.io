@@ -1,0 +1,91 @@
+/* Layout */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px 5%;
+}
+
+header, #education {
+	width: 25%;
+	float: left;
+}
+
+nav, #resume, #experience, #hobbies {
+	width: 60%;
+	float: right;
+}
+
+footer {
+	clear: both;
+}
+
+/* Fonts */
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+/* Colors */
+
+/* Part specifics */
+
+/* -- Header */
+
+header #contacts li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+header #contacts li a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+
+header #contacts li a:hover {
+	width: auto;
+}
+
+/* -- Education */
+#education {
+	margin-top: 30px;
+}
+
+#education article {
+	margin-bottom: 20px;
+}
+
+/* -- Navigation */
+nav ul {
+	margin-bottom: 15px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+/* -- About */
+
+/* -- Experience */
+
+/* -- Hobbies */
+
+/* -- Hobbies */
