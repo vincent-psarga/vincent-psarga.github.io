@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
+require 'sass'
 require './lib/cv_maker.rb'
+
+engine = Sass::Engine.new(File.read('assets/stylesheets/layout.sass'), :syntax => :sass)
+File.open('assets/stylesheets/layout.css', 'w') do |file|
+  file.write(engine.render)
+end
 
 CVMaker.new('fr').write('index.html')
 CVMaker.new('fr').write('index_fr.html')
