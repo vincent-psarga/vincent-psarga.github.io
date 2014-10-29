@@ -1,4 +1,7 @@
 --- 
+resume: 
+  data: ""
+  title: About
 education: 
   title: Education
   data: 
@@ -17,9 +20,6 @@ experience:
   data:
 hobbie: 
   title: Hobbies
-  data:
-    - "I practice various outdoor activities such as hiking, climbing and skiing."
-    - "I also practive Historical European Medieval Arts (mainly longsword, dagger and axe) and medieval reenactment with the Ad Honores association."
-resume: 
-  data: ""
-  title: Resumé
+  data: |
+    I practice various outdoor activities such as hiking, climbing and skiing.
+    I also practive Historical European Medieval Arts (mainly longsword, dagger and axe) and medieval reenactment with the Ad Honores association.
