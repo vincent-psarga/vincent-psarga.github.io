@@ -19,8 +19,18 @@ class CVMaker
     File.read('templates/body.hbs')
   end
 
+  def update_places data, places
+    data.each do |d|
+      d['where'] = places[d['where-uid']]
+    end
+  end
+
   def context
-    YAML.load_file("data/#{@source}.yml")
+    data = YAML.load_file("data/#{@source}.yml")
+    places = data['places']
+    update_places(data['experience']['data'], places)
+    update_places(data['education']['data'], places)
+    data
   end
 
   def render

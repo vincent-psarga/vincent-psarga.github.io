@@ -30,7 +30,6 @@ experience:
     -
       id: 5
       title: "Développeur web (Rails, Ember.js)"
-      where: "Smartesting, Besançon"
       where-uid: "smartesting"
       dates: "2012 - 2014"
       body: ""
@@ -45,7 +44,6 @@ experience:
     -
       id: 4
       title: "Développeur web (Plone, Django)"
-      where: "Zest software, Rotterdam"
       where-uid: "zest"
       dates: "2009 - 2012"
       body: |
@@ -74,7 +72,6 @@ experience:
     -
       id: 3
       title: "Doctorat d’informatique (Validation des services web à l’aide de la génération automatique de tests)"
-      where: "LIFC, Besançon"
       where-uid: "lifc"
       dates: "2005 - 2009"
       body: |
@@ -92,7 +89,6 @@ experience:
     -
       id: 2
       title: "Stage de master recherche (Multi-agents et composants pour la transmission vidéo)"
-      where: "LIFC, Besançon"
       where-uid: "lifc"
       dates: "2005"
       body: |
@@ -106,13 +102,13 @@ experience:
     -
       id: 1
       title: "Développeur web (PHP)"
-      where: "Bleu-Vert, Lausanne"
-      where-uid: "bleuvert"
+      where-uid: "bleu-vert"
       dates: "2003"
       body: |
         Lors de mon stage chez Bleu-Vert, j’ai travaillé sur deux sites:
-          - [Tschau](http://www.tschau.ch) : correction des bugs et ajout de nouvelles fonctionnalités;
-          - [Guide Social](www.guidesocial.ch) : création de l’interface d’administration.
+        
+         - [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
+         - [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
         
         Ces sites ont été développés avec PHP/MySQL. Le système de templates Smarty a été utilisé afin de permettre la collaboration avec un graphiste chargé du style du site
 
@@ -127,12 +123,10 @@ education:
     - 
       title: "Doctorat d'informatique"
       dates: 2005-2009
-      where: "Université de Franche-Comté"
       where-uid: "ufc"
     - 
       title: "Master informatique - systèmes distribués"
       dates: 2004-2005
-      where: "Université de Franche-Comté"
       where-uid: "ufc"
 
 hobbie:
@@ -140,3 +134,30 @@ hobbie:
   data: |
     Je pratique diverses activitées sportives en extérieur telles que la randonnée, l'escalade et le ski.
     Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reocnstitution au sein de l'association Ad Honores. 
+
+places:
+  ufc: 
+    name: "Université de Franche-Comté"
+    link: "http://www.univ-fcomte.fr/"
+    location: "Besançon"
+    country: "France"
+  lifc:
+    name: "LIFC"
+    link: "http://lifc.univ-fcomte.fr"
+    location: "Besançon"
+    country: "France"
+  bleu-vert:
+    name: "Bleu-vert"
+    link: "http://www.bleu-vert.ch"
+    location: "Lausanne"
+    country: "Suisse"
+  zest:
+    name: "Zest software"
+    link: "http://www.zestsoftware.nl"
+    location: "Rotterdam"
+    country: "Pays-Bas"
+  smartesting:
+    name: "Smartesting"
+    link: "http://www.smartesting.com"
+    location: "Besançon"
+    country: "France"

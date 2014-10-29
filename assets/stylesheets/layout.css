@@ -90,8 +90,67 @@ nav a:hover {
 }
 /* -- About */
 
+#resume {
+	margin-bottom: 30px;
+}
+
 /* -- Experience */
 
-/* -- Hobbies */
+#experience {
+	margin-bottom: 30px;
+}
+
+#experience article {
+	margin-bottom: 15px;
+}
+
+#experience a.where {
+	display: inline-block;
+	text-align: center;
+	min-width: 105px;
+	max-width: 300px;
+	border: 1px solid #555;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	float: right;
+	padding: 10px;
+	margin: 15px;
+}
+
+#experience a.where-smartesting {
+	padding-top: 65px;
+	background-image: url('../images/logos/smartesting.png');
+}
+
+#experience a.where-zest {
+	padding-top: 38px;
+	background-image: url('../images/logos/zest.png');
+}
+
+#experience a.where-bleu-vert {
+	padding-top: 31px;
+	background-image: url('../images/logos/bleu-vert.png');
+}
+
+#experience a.where-lifc {
+	padding-top: 115px;
+	background-image: url('../images/logos/lifc.png');
+}
+
+#experience .keywords li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 15px;
+}
 
 /* -- Hobbies */
+
+#hobbies {
+	margin-bottom: 30px;
+}
+
+/* -- Footer */
+footer {
+	text-align: center;
+}

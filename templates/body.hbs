@@ -53,15 +53,15 @@
 				<article>
 					<h3>{{ this.title}} </h3>
 					<span class="dates">{{ this.dates }}</span>
-					<span class="where{{this.where_classes}}">{{ this.where}} </span>
+					<a href="{{this.where.link}}" class="where where-{{this.where-uid}}">
+						{{ this.where.name}}, {{this.where.location}}
+					</a>
 					{{{md this.body }}}
-					<p class="keywords">
-						<ul>
-							{{#each this.keywords}}
-								<li>{{ this }}</li>
-							{{/each}}
-						</ul>
-					</p>
+					<ul class="keywords">
+						{{#each this.keywords}}
+							<li>{{ this }}</li>
+						{{/each}}
+					</ul>
 				</article>
 				{{/each}}
 			</section>
@@ -71,7 +71,7 @@
 				<article>
 					<h3>{{ this.title }}</h3>
 					<span class="dates">{{ this.dates }}</span>
-					<span class="where{{this.where_classes}}">{{ this.where}} </span>
+					<span class="where-{{this.where-uid}}">{{ this.where.name}} </span>
 				</article>
 				{{/each}}
 			</section>
@@ -81,7 +81,7 @@
 			</section>
 		</main>
 		<footer>
-			<p>Hosted by <a href="https://pages.github.io">Github.io</a> / Icons from <a href="https://icomoon.io/">icoMoon</a></p>
+			<p>Hosted by <a href="https://pages.github.com/">Github.io</a> / Icons from <a href="https://icomoon.io/">icoMoon</a></p>
 		</footer>
 	</body>
 </html>
