@@ -48,7 +48,7 @@ experience:
       title: "Développeur web (PHP)"
       body: |
         Lors de mon stage chez Bleu-Vert, j’ai travaillé sur deux sites:
-
+        
          * [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
          * [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
         
@@ -73,3 +73,7 @@ hobbie:
   body: |
     Je pratique diverses activitées sportives en extérieur telles que la randonnée, l'escalade et le ski.
     Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reocnstitution au sein de l'association Ad Honores. 
+
+places:
+  ufc: 
+    name: "Université de Franche-Comté"
