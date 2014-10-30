@@ -6,18 +6,27 @@ $medium: 10px
 $large: 20px
 $xlarge: 30px
 
+/* Palette URL: http://paletton.com/#uid=12t0u0kllll1l2Eblb+vluGW+T3 */
+$color-primary-0: #709C34
+$color-primary-1: #131313
+$color-primary-2: #4A5739
+$color-primary-3: #84E005
+$color-primary-4: #91FA00
+
 =box
     margin-bottom: $xlarge
 
 =left-box
     +box
-    width: 25%
+    width: 30%
     float: left
+    margin-left: 5%
 
 =right-box
     +box
     width: 60%
     float: right
+    margin-right: 5%
 
 =inline-list
     list-style-type: none
@@ -80,27 +89,11 @@ $xlarge: 30px
 =icon-linkedin
     +iconed("\e605")
 
+=icon-hammer
+    +iconed("\e60e")
 
 .location
     +icon-location
-
-.mail
-    +icon-mail
-
-.googleplus
-    +icon-googleplus
-
-.twitter
-    +icon-twitter
-
-.github
-    +icon-github
-
-.skype
-    +icon-skype
-
-.linkedin
-    +icon-linkedin
 
 
 /* Layout */
@@ -110,16 +103,41 @@ $xlarge: 30px
 
 
 body
-    margin: 0px 5%
     font-family: $content-font
+    color: $color-primary-1
+    background: #ececec
+    margin-top: $medium
+
 
 h1, h2, h3
     font-family: $titles-font
+    color: $color-primary-0
+
+a
+    color: $color-primary-2
+
+article
+    margin-bottom: $large
+
+    & p
+        margin-bottom: $medium
+
+    & ul
+        margin-left: $medium
+        margin-bottom: $medium
+
+        & li
+            margin-left: $medium
 
 /* -- Header */
 
 header
     +left-box
+    & .avatar
+        float: left
+        margin: $small
+        border: 1px solid $color-primary-3
+
     & #contacts
         & li
             +inline-list
@@ -131,16 +149,40 @@ header
                 height: $large
                 overflow: hidden
 
-/* -- Education */
+                &.mail
+                    +icon-mail
+                &.googleplus
+                    +icon-googleplus
+                &.twitter
+                    +icon-twitter
+                &.github
+                    +icon-github
+                &.skype
+                    +icon-skype
+                &.linkedin
+                    +icon-linkedin
+    & #address
+        clear: both
+        & > p
+            +icon-location
+            padding-left: $medium
+        margin-top: $medium
+        margin-bottom: $medium
+
 #education
     +left-box
     & h2
         +icon-library
 
-    & article
-        margin-bottom: $large
+    font-size: 80%
 
-/* -- Navigation */
+#skills
+    +left-box
+    & h2
+        +icon-hammer
+
+    font-size: 80%
+
 nav
     +right-box
     & ul
@@ -162,6 +204,8 @@ nav
             +icon-office
         &.link-to-education
             +icon-library
+        &.link-to-skills
+            +icon-hammer
         &.link-to-hobbies
             +icon-pacman
 
@@ -179,9 +223,6 @@ nav
 
     & h2
         +icon-office
-
-    & article
-        margin-bottom: $medium
 
     & a.where
         display: inline-block
@@ -229,3 +270,8 @@ nav
 footer
     text-align: center
     clear: both
+    background: $color-primary-2
+    color: $color-primary-3
+    padding: $small
+    a
+        color: $color-primary-4

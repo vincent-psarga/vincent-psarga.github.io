@@ -6,6 +6,9 @@ resume:
   title: "A propos"
   body: ""
 
+skills:
+  title: "Compétences"
+
 experience:
   title: Expérience
   data:

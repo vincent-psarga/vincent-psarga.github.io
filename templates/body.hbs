@@ -7,10 +7,10 @@
 	</head>
 	<body>
 		<header>
-			<img src="{{ about.avatar}} " />
+			<img class="avatar" src="{{ about.avatar}} " />
 			<h1>Vincent Prêtre</h1>
 			<span class="headline">{{ about.title }}</span>
-			<div id="address" class="location">{{{md about.address}}}</div>
+			<div id="address">{{{md about.address}}}</div>
 			<ul id="contacts">
 				{{#each about.contacts}}
 				<li>
@@ -31,6 +31,9 @@
 				</li>
 				<li>
 					<a href="#education" class="link-to-education">{{ education.title }}</a>
+				</li>
+				<li>
+					<a href="#skills" class="link-to-skills">{{ skills.title }}</a>
 				</li>
 				<li>
 					<a href="#hobbies" class="link-to-hobbies">{{ hobbie.title }}</a>
@@ -76,6 +79,9 @@
 					<span class="where-{{this.where-uid}}">{{ this.where.name}} </span>
 				</article>
 				{{/each}}
+			</section>
+			<section id="skills">
+				<h2>{{ skills.title }}</h2>
 			</section>
 			<section id="hobbies">
 				<h2>{{ hobbie.title }}</h2>

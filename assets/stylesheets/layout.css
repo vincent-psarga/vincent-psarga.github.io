@@ -1,3 +1,4 @@
+/* Palette URL: http://paletton.com/#uid=12t0u0kllll1l2Eblb+vluGW+T3 */
 .location:before {
   font-family: "icomoon";
   speak: none;
@@ -11,101 +12,44 @@
   padding-right: 5px;
   content: "\e600"; }
 
-.mail:before {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 5px;
-  content: "\e601"; }
-
-.googleplus:before {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 5px;
-  content: "\e602"; }
-
-.twitter:before {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 5px;
-  content: "\e603"; }
-
-.github:before {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 5px;
-  content: "\e604"; }
-
-.skype:before {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 5px;
-  content: "\e606"; }
-
-.linkedin:before {
-  font-family: "icomoon";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding-right: 5px;
-  content: "\e605"; }
-
 /* Layout */
 * {
   margin: 0px;
   padding: 0px; }
 
 body {
-  margin: 0px 5%;
-  font-family: "Arial", sans-serif; }
+  font-family: "Arial", sans-serif;
+  color: #131313;
+  background: #ececec;
+  margin-top: 10px; }
 
 h1, h2, h3 {
-  font-family: "Droid Sans", sans-serif; }
+  font-family: "Droid Sans", sans-serif;
+  color: #709c34; }
+
+a {
+  color: #4a5739; }
+
+article {
+  margin-bottom: 20px; }
+  article p {
+    margin-bottom: 10px; }
+  article ul {
+    margin-left: 10px;
+    margin-bottom: 10px; }
+    article ul li {
+      margin-left: 10px; }
 
 /* -- Header */
 header {
   margin-bottom: 30px;
-  width: 25%;
-  float: left; }
+  width: 30%;
+  float: left;
+  margin-left: 5%; }
+  header .avatar {
+    float: left;
+    margin: 5px;
+    border: 1px solid #84e005; }
   header #contacts li {
     list-style-type: none;
     display: inline-block;
@@ -117,12 +61,103 @@ header {
       width: 20px;
       height: 20px;
       overflow: hidden; }
+      header #contacts li a.mail:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e601"; }
+      header #contacts li a.googleplus:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e602"; }
+      header #contacts li a.twitter:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e603"; }
+      header #contacts li a.github:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e604"; }
+      header #contacts li a.skype:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e606"; }
+      header #contacts li a.linkedin:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e605"; }
+  header #address {
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    header #address > p {
+      padding-left: 10px; }
+      header #address > p:before {
+        font-family: "icomoon";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-right: 5px;
+        content: "\e600"; }
 
-/* -- Education */
 #education {
   margin-bottom: 30px;
-  width: 25%;
-  float: left; }
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  font-size: 80%; }
   #education h2:before {
     font-family: "icomoon";
     speak: none;
@@ -135,14 +170,31 @@ header {
     -moz-osx-font-smoothing: grayscale;
     padding-right: 5px;
     content: "\e60b"; }
-  #education article {
-    margin-bottom: 20px; }
 
-/* -- Navigation */
+#skills {
+  margin-bottom: 30px;
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  font-size: 80%; }
+  #skills h2:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e60e"; }
+
 nav {
   margin-bottom: 30px;
   width: 60%;
-  float: right; }
+  float: right;
+  margin-right: 5%; }
   nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -191,6 +243,18 @@ nav {
       -moz-osx-font-smoothing: grayscale;
       padding-right: 5px;
       content: "\e60b"; }
+    nav a.link-to-skills:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e60e"; }
     nav a.link-to-hobbies:before {
       font-family: "icomoon";
       speak: none;
@@ -208,7 +272,8 @@ nav {
 #resume {
   margin-bottom: 30px;
   width: 60%;
-  float: right; }
+  float: right;
+  margin-right: 5%; }
   #resume h2:before {
     font-family: "icomoon";
     speak: none;
@@ -226,7 +291,8 @@ nav {
 #experience {
   margin-bottom: 30px;
   width: 60%;
-  float: right; }
+  float: right;
+  margin-right: 5%; }
   #experience h2:before {
     font-family: "icomoon";
     speak: none;
@@ -239,8 +305,6 @@ nav {
     -moz-osx-font-smoothing: grayscale;
     padding-right: 5px;
     content: "\e607"; }
-  #experience article {
-    margin-bottom: 10px; }
   #experience a.where {
     display: inline-block;
     text-align: center;
@@ -276,7 +340,8 @@ nav {
 #hobbies {
   margin-bottom: 30px;
   width: 60%;
-  float: right; }
+  float: right;
+  margin-right: 5%; }
   #hobbies h2:before {
     font-family: "icomoon";
     speak: none;
@@ -293,4 +358,9 @@ nav {
 /* -- Footer */
 footer {
   text-align: center;
-  clear: both; }
+  clear: both;
+  background: #4a5739;
+  color: #84e005;
+  padding: 5px; }
+  footer a {
+    color: #91fa00; }
