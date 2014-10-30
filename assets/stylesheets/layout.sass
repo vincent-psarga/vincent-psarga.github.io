@@ -5,19 +5,48 @@ $small: 5px
 $medium: 10px
 $large: 20px
 $xlarge: 30px
+$xxlarge: 45px
+
 
 /* Palette URL: http://paletton.com/#uid=12t0u0kllll1l2Eblb+vluGW+T3 */
-$color-primary-0: #709C34
-$color-primary-1: #131313
-$color-primary-2: #4A5739
-$color-primary-3: #84E005
-$color-primary-4: #91FA00
+$color-primary-0: #569DC0
+$color-primary-1: #B1DAEE
+$color-primary-2: #7EBBD9
+$color-primary-3: #3680A4
+$color-primary-4: #1D6D93
 
-$color-primary-0-light :lighten($color-primary-0, 50%)
+=shadowed
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75)
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 
+=box-title($top)
+    color: $color-primary-3
+    border: 1px solid $color-primary-3
+    background: $color-primary-2
+
+    padding: $small
+    margin-top: $top
+    margin-right: -$medium
+    margin-bottom: $small
+    margin-left: -$medium
 
 =box
+    +shadowed
     margin-bottom: $xlarge
+    padding: $small
+    border: 1px solid $color-primary-3
+    background: lighten($color-primary-3, 45%)
+
+    & h1
+        +box-title($medium)
+
+    & h2
+        +box-title(0px)
+
+    & h3
+        color: $color-primary-0
+
 
 =left-box
     +box
@@ -27,7 +56,7 @@ $color-primary-0-light :lighten($color-primary-0, 50%)
 
 =right-box
     +box
-    width: 60%
+    width: 55%
     float: right
     margin-right: 5%
 
@@ -107,14 +136,13 @@ $color-primary-0-light :lighten($color-primary-0, 50%)
 
 body
     font-family: $content-font
-    color: $color-primary-1
-    background: $color-primary-0-light
-    margin-top: $medium
+    color: $color-primary-0
+    margin-top: $xxlarge
+    background: lighten($color-primary-3, 50%)
 
 
 h1, h2, h3
     font-family: $titles-font
-    color: $color-primary-0
 
 a
     color: $color-primary-2
@@ -131,8 +159,6 @@ article
 
         & li
             margin-left: $medium
-
-/* -- Header */
 
 header
     +left-box
@@ -152,6 +178,9 @@ header
                 height: $large
                 overflow: hidden
 
+                &:hover
+                    color: $color-primary-3
+
                 &.mail
                     +icon-mail
                 &.googleplus
@@ -166,9 +195,14 @@ header
                     +icon-linkedin
     & #address
         clear: both
+        position: relative
         & > p
             +icon-location
             padding-left: $medium
+            &:before
+                position: absolute
+                left: -$small
+
         margin-top: $medium
         margin-bottom: $medium
 
@@ -187,18 +221,32 @@ header
     font-size: 80%
 
 nav
-    +right-box
+    +shadowed
+    position: fixed
+    top: 0px
+
+    display: block
+    width: 100%
+
+    border-bottom: 1px solid $color-primary-3
+    background: $color-primary-2
+
     & ul
         & li
             +inline-list
+            padding: $small
+
         &.sections
             float: left
 
         &.langs
             float: right
     & a
+        color: $color-primary-3
         text-decoration: none
+
         &:hover
+            color: #fff
             text-decoration: underline
 
         &.link-to-resume
@@ -230,6 +278,8 @@ nav
     & a.where
         display: inline-block
         text-align: center
+        text-decoration: none
+
         min-width: 105px
         max-width: 300px
         border: 1px solid #555
@@ -273,6 +323,7 @@ nav
 footer
     text-align: center
     clear: both
+    border-top: 1px solid $color-primary-3
     background: $color-primary-2
     color: $color-primary-3
     padding: $small

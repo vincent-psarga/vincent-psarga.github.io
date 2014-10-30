@@ -19,16 +19,15 @@
 
 body {
   font-family: "Arial", sans-serif;
-  color: #131313;
-  background: #e9f3dc;
-  margin-top: 10px; }
+  color: #569dc0;
+  margin-top: 45px;
+  background: #e3f0f6; }
 
 h1, h2, h3 {
-  font-family: "Droid Sans", sans-serif;
-  color: #709c34; }
+  font-family: "Droid Sans", sans-serif; }
 
 a {
-  color: #4a5739; }
+  color: #7ebbd9; }
 
 article {
   margin-bottom: 20px; }
@@ -40,16 +39,41 @@ article {
     article ul li {
       margin-left: 10px; }
 
-/* -- Header */
 header {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
+  padding: 5px;
+  border: 1px solid #3680a4;
+  background: #d0e5f0;
   width: 30%;
   float: left;
   margin-left: 5%; }
+  header h1 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  header h2 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  header h3 {
+    color: #569dc0; }
   header .avatar {
     float: left;
     margin: 5px;
-    border: 1px solid #84e005; }
+    border: 1px solid #3680a4; }
   header #contacts li {
     list-style-type: none;
     display: inline-block;
@@ -61,6 +85,8 @@ header {
       width: 20px;
       height: 20px;
       overflow: hidden; }
+      header #contacts li a:hover {
+        color: #3680a4; }
       header #contacts li a.mail:before {
         font-family: "icomoon";
         speak: none;
@@ -135,6 +161,7 @@ header {
         content: "\e605"; }
   header #address {
     clear: both;
+    position: relative;
     margin-top: 10px;
     margin-bottom: 10px; }
     header #address > p {
@@ -151,13 +178,42 @@ header {
         -moz-osx-font-smoothing: grayscale;
         padding-right: 5px;
         content: "\e600"; }
+      header #address > p:before {
+        position: absolute;
+        left: -5px; }
 
 #education {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
+  padding: 5px;
+  border: 1px solid #3680a4;
+  background: #d0e5f0;
   width: 30%;
   float: left;
   margin-left: 5%;
   font-size: 80%; }
+  #education h1 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #education h2 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #education h3 {
+    color: #569dc0; }
   #education h2:before {
     font-family: "icomoon";
     speak: none;
@@ -172,11 +228,37 @@ header {
     content: "\e60b"; }
 
 #skills {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
+  padding: 5px;
+  border: 1px solid #3680a4;
+  background: #d0e5f0;
   width: 30%;
   float: left;
   margin-left: 5%;
   font-size: 80%; }
+  #skills h1 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #skills h2 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #skills h3 {
+    color: #569dc0; }
   #skills h2:before {
     font-family: "icomoon";
     speak: none;
@@ -191,21 +273,29 @@ header {
     content: "\e60e"; }
 
 nav {
-  margin-bottom: 30px;
-  width: 60%;
-  float: right;
-  margin-right: 5%; }
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  top: 0px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #3680a4;
+  background: #7ebbd9; }
   nav ul li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 5px; }
+    margin-right: 5px;
+    padding: 5px; }
   nav ul.sections {
     float: left; }
   nav ul.langs {
     float: right; }
   nav a {
+    color: #3680a4;
     text-decoration: none; }
     nav a:hover {
+      color: white;
       text-decoration: underline; }
     nav a.link-to-resume:before {
       font-family: "icomoon";
@@ -270,10 +360,36 @@ nav {
 
 /* -- Resume */
 #resume {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
-  width: 60%;
+  padding: 5px;
+  border: 1px solid #3680a4;
+  background: #d0e5f0;
+  width: 55%;
   float: right;
   margin-right: 5%; }
+  #resume h1 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #resume h2 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #resume h3 {
+    color: #569dc0; }
   #resume h2:before {
     font-family: "icomoon";
     speak: none;
@@ -289,10 +405,36 @@ nav {
 
 /* -- Experience */
 #experience {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
-  width: 60%;
+  padding: 5px;
+  border: 1px solid #3680a4;
+  background: #d0e5f0;
+  width: 55%;
   float: right;
   margin-right: 5%; }
+  #experience h1 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #experience h2 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #experience h3 {
+    color: #569dc0; }
   #experience h2:before {
     font-family: "icomoon";
     speak: none;
@@ -308,6 +450,7 @@ nav {
   #experience a.where {
     display: inline-block;
     text-align: center;
+    text-decoration: none;
     min-width: 105px;
     max-width: 300px;
     border: 1px solid #555555;
@@ -338,10 +481,36 @@ nav {
 
 /* -- Hobbies */
 #hobbies {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
-  width: 60%;
+  padding: 5px;
+  border: 1px solid #3680a4;
+  background: #d0e5f0;
+  width: 55%;
   float: right;
   margin-right: 5%; }
+  #hobbies h1 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #hobbies h2 {
+    color: #3680a4;
+    border: 1px solid #3680a4;
+    background: #7ebbd9;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    margin-left: -10px; }
+  #hobbies h3 {
+    color: #569dc0; }
   #hobbies h2:before {
     font-family: "icomoon";
     speak: none;
@@ -359,8 +528,9 @@ nav {
 footer {
   text-align: center;
   clear: both;
-  background: #4a5739;
-  color: #84e005;
+  border-top: 1px solid #3680a4;
+  background: #7ebbd9;
+  color: #3680a4;
   padding: 5px; }
   footer a {
-    color: #91fa00; }
+    color: #1d6d93; }
