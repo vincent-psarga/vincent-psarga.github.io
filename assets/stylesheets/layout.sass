@@ -1,3 +1,29 @@
+$titles-font: 'Droid Sans', sans-serif
+$content-font: 'Arial', sans-serif
+
+$small: 5px
+$medium: 10px
+$large: 20px
+$xlarge: 30px
+
+=box
+    margin-bottom: $xlarge
+
+=left-box
+    +box
+    width: 25%
+    float: left
+
+=right-box
+    +box
+    width: 60%
+    float: right
+
+=inline-list
+    list-style-type: none
+    display: inline-block
+    margin-right: $small
+
 /* Layout */
 *
     margin: 0px
@@ -6,132 +32,100 @@
 
 body
     margin: 0px 5%
-
-
-header, #education
-    width: 25%
-    float: left
-
-
-nav, #resume, #experience, #hobbies
-    width: 60%
-    float: right
-
-footer
-    clear: both
-
-/* Fonts */
-
-body
-    font-family: 'Arial', sans-serif
-
+    font-family: $content-font
 
 h1, h2, h3
-    font-family: 'Droid Sans', sans-serif
-
-/* Colors */
-
-/* Part specifics */
+    font-family: $titles-font
 
 /* -- Header */
 
-header #contacts li
-    list-style-type: none
-    display: inline-block
-    margin-right: 5px
-
-
-header #contacts li a
-    display: inline-block
-    text-decoration: none
-    font-size: 20px
-    width: 20px
-    height: 20px
-    overflow: hidden
+header
+    +left-box
+    & #contacts
+        & li
+            +inline-list
+            & a
+                display: inline-block
+                text-decoration: none
+                font-size: $large
+                width: $large
+                height: $large
+                overflow: hidden
 
 /* -- Education */
 #education
-    margin-top: 30px
-
-#education article
-    margin-bottom: 20px
+    +left-box
+    margin-top: $xlarge
+    & article
+        margin-bottom: $large
 
 /* -- Navigation */
 nav
-    margin-bottom: 15px
+    +right-box
+    & ul
+        & li
+            +inline-list
+        &.sections
+            float: left
 
-nav ul.sections
-    float: left
+        &.langs
+            float: right
+    & a
+        text-decoration: none
+        &:hover
+            text-decoration: underline
 
-nav ul.langs
-    float: right
-
-nav ul li
-    list-style-type: none
-    display: inline-block
-    margin-right: 10px
-
-nav a
-    text-decoration: none
-
-nav a:hover
-    text-decoration: underline
-
-/* -- About */
-
+/* -- Resume */
 #resume
-    margin-bottom: 30px
+    +right-box
 
 /* -- Experience */
 
 #experience
-    margin-bottom: 30px
+    +right-box
+    & article
+        margin-bottom: $medium
 
-#experience article
-    margin-bottom: 15px
+    & a.where
+        display: inline-block
+        text-align: center
+        min-width: 105px
+        max-width: 300px
+        border: 1px solid #555
+        background: #fff
+        background-repeat: no-repeat
+        background-position: center 10px
+        float: right
+        padding: $medium
+        margin: $medium
 
-#experience a.where
-    display: inline-block
-    text-align: center
-    min-width: 105px
-    max-width: 300px
-    border: 1px solid #555
-    background: #fff
-    background-repeat: no-repeat
-    background-position: center 10px
-    float: right
-    padding: 10px
-    margin: 15px
+        &.where-smartesting
+            padding-top: 65px
+            background-image: url('../images/logos/smartesting.png')
 
-#experience a.where-smartesting
-    padding-top: 65px
-    background-image: url('../images/logos/smartesting.png')
+        &.where-zest
+            padding-top: 38px
+            background-image: url('../images/logos/zest.png')
 
-#experience a.where-zest
-    padding-top: 38px
-    background-image: url('../images/logos/zest.png')
+        &.where-bleu-vert
+            padding-top: 31px
+            background-image: url('../images/logos/bleu-vert.png')
+        
+        &.where-lifc
+            padding-top: 115px
+            background-image: url('../images/logos/lifc.png')
 
-#experience a.where-bleu-vert
-    padding-top: 31px
-    background-image: url('../images/logos/bleu-vert.png')
+    & .keywords
+        clear: both
 
-#experience a.where-lifc
-    padding-top: 115px
-    background-image: url('../images/logos/lifc.png')
-
-#experience .keywords
-    clear: both
-
-#experience .keywords li
-    list-style-type: none
-    display: inline-block
-    margin-left: 15px
+        & li
+            +inline-list
 
 /* -- Hobbies */
-
 #hobbies
-    margin-bottom: 30px
+    +right-box
 
 /* -- Footer */
 footer
     text-align: center
+    clear: both
