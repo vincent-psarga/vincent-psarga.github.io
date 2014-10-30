@@ -124,6 +124,9 @@ $color-primary-4: #1D6D93
 =icon-hammer
     +iconed("\e60e")
 
+=icon-tag
+    +iconed("\e60f")
+
 .location
     +icon-location
 
@@ -308,9 +311,18 @@ nav
 
     & .keywords
         clear: both
+        +icon-tag
 
         & li
             +inline-list
+            border: 1px solid $color-primary-2
+            background: lighten($color-primary-2, 25%)
+            padding: $small
+            margin-bottom: $small
+            -webkit-border-radius: $small
+            -moz-border-radius: $small
+            border-radius: $small
+
 
 /* -- Hobbies */
 #hobbies
