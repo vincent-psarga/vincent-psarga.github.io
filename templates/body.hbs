@@ -10,12 +10,12 @@
 			<img src="{{ about.avatar}} " />
 			<h1>Vincent Prêtre</h1>
 			<span class="headline">{{ about.title }}</span>
-			<div id="address">{{{md about.address}}}</div>
+			<div id="address" class="location">{{{md about.address}}}</div>
 			<ul id="contacts">
 				{{#each about.contacts}}
-				<li class="{{this.type}}">
-					<a href="{{this.value}}" title="{{this.title}}">
-						<i class="icon-{{this.type}}"></i> {{this.title}}
+				<li>
+					<a href="{{this.value}}" title="{{this.title}}" class="{{this.type}}">
+						{{this.title}}
 					</a>
 				</li>
 				{{/each}}

@@ -24,6 +24,46 @@ $xlarge: 30px
     display: inline-block
     margin-right: $small
 
+=iconed
+    font-family: 'icomoon'
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.location:before
+    +iconed
+    content: "\e600"
+
+.mail:before
+    +iconed
+    content: "\e601"
+
+.googleplus:before
+    +iconed
+    content: "\e602"
+
+.twitter:before
+    +iconed
+    content: "\e603"
+
+.github:before
+    +iconed
+    content: "\e604"
+
+.skype:before
+    +iconed
+    content: "\e606"
+
+.linkedin:before
+    +iconed
+    content: "\e605"
+
+
 /* Layout */
 *
     margin: 0px
