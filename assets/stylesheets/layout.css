@@ -8,6 +8,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e600"; }
 
 .mail:before {
@@ -20,6 +21,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e601"; }
 
 .googleplus:before {
@@ -32,6 +34,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e602"; }
 
 .twitter:before {
@@ -44,6 +47,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e603"; }
 
 .github:before {
@@ -56,6 +60,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e604"; }
 
 .skype:before {
@@ -68,6 +73,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e606"; }
 
 .linkedin:before {
@@ -80,6 +86,7 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-right: 5px;
   content: "\e605"; }
 
 /* Layout */
@@ -115,8 +122,19 @@ header {
 #education {
   margin-bottom: 30px;
   width: 25%;
-  float: left;
-  margin-top: 30px; }
+  float: left; }
+  #education h2:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e60b"; }
   #education article {
     margin-bottom: 20px; }
 
@@ -137,18 +155,90 @@ nav {
     text-decoration: none; }
     nav a:hover {
       text-decoration: underline; }
+    nav a.link-to-resume:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e608"; }
+    nav a.link-to-experience:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e607"; }
+    nav a.link-to-education:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e60b"; }
+    nav a.link-to-hobbies:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e60a"; }
 
 /* -- Resume */
 #resume {
   margin-bottom: 30px;
   width: 60%;
   float: right; }
+  #resume h2:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e608"; }
 
 /* -- Experience */
 #experience {
   margin-bottom: 30px;
   width: 60%;
   float: right; }
+  #experience h2:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e607"; }
   #experience article {
     margin-bottom: 10px; }
   #experience a.where {
@@ -187,6 +277,18 @@ nav {
   margin-bottom: 30px;
   width: 60%;
   float: right; }
+  #hobbies h2:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e60a"; }
 
 /* -- Footer */
 footer {

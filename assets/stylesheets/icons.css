@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?qssbgs');
-	src:url('../fonts/icomoon.eot?#iefixqssbgs') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?qssbgs') format('woff'),
-		url('../fonts/icomoon.ttf?qssbgs') format('truetype'),
-		url('../fonts/icomoon.svg?qssbgs#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-jlf097');
+	src:url('../fonts/icomoon.eot?#iefix-jlf097') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-jlf097') format('woff'),
+		url('../fonts/icomoon.ttf?-jlf097') format('truetype'),
+		url('../fonts/icomoon.svg?-jlf097#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,8 +23,29 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-office:before {
+	content: "\e607";
+}
+.icon-quill:before {
+	content: "\e608";
+}
+.icon-pen:before {
+	content: "\e609";
+}
+.icon-pacman:before {
+	content: "\e60a";
+}
+.icon-library:before {
+	content: "\e60b";
+}
+.icon-phone:before {
+	content: "\e60c";
+}
 .icon-location:before {
 	content: "\e600";
+}
+.icon-calendar:before {
+	content: "\e60d";
 }
 .icon-mail:before {
 	content: "\e601";

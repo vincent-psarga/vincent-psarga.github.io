@@ -24,44 +24,83 @@ $xlarge: 30px
     display: inline-block
     margin-right: $small
 
-=iconed
-    font-family: 'icomoon'
-    speak: none
-    font-style: normal
-    font-weight: normal
-    font-variant: normal
-    text-transform: none
-    line-height: 1
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
+=iconed($content)
+    &:before
+        font-family: 'icomoon'
+        speak: none
+        font-style: normal
+        font-weight: normal
+        font-variant: normal
+        text-transform: none
+        line-height: 1
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        padding-right: $small
+        content: $content
 
-.location:before
-    +iconed
-    content: "\e600"
+=icon-office
+    +iconed("\e607")
 
-.mail:before
-    +iconed
-    content: "\e601"
+=icon-quill
+    +iconed("\e608")
 
-.googleplus:before
-    +iconed
-    content: "\e602"
+=icon-pen
+    +iconed("\e609")
 
-.twitter:before
-    +iconed
-    content: "\e603"
+=icon-pacman
+    +iconed("\e60a")
 
-.github:before
-    +iconed
-    content: "\e604"
+=icon-library
+    +iconed("\e60b")
 
-.skype:before
-    +iconed
-    content: "\e606"
+=icon-phone
+    +iconed("\e60c")
 
-.linkedin:before
-    +iconed
-    content: "\e605"
+=icon-location
+    +iconed("\e600")
+
+=icon-calendar
+    +iconed("\e60d")
+
+=icon-mail
+    +iconed("\e601")
+
+=icon-googleplus
+    +iconed("\e602")
+
+=icon-twitter
+    +iconed("\e603")
+
+=icon-github
+    +iconed("\e604")
+
+=icon-skype
+    +iconed("\e606")
+
+=icon-linkedin
+    +iconed("\e605")
+
+
+.location
+    +icon-location
+
+.mail
+    +icon-mail
+
+.googleplus
+    +icon-googleplus
+
+.twitter
+    +icon-twitter
+
+.github
+    +icon-github
+
+.skype
+    +icon-skype
+
+.linkedin
+    +icon-linkedin
 
 
 /* Layout */
@@ -95,7 +134,9 @@ header
 /* -- Education */
 #education
     +left-box
-    margin-top: $xlarge
+    & h2
+        +icon-library
+
     & article
         margin-bottom: $large
 
@@ -115,14 +156,30 @@ nav
         &:hover
             text-decoration: underline
 
+        &.link-to-resume
+            +icon-quill
+        &.link-to-experience
+            +icon-office
+        &.link-to-education
+            +icon-library
+        &.link-to-hobbies
+            +icon-pacman
+
 /* -- Resume */
 #resume
     +right-box
+
+    & h2
+        +icon-quill
 
 /* -- Experience */
 
 #experience
     +right-box
+
+    & h2
+        +icon-office
+
     & article
         margin-bottom: $medium
 
@@ -164,6 +221,9 @@ nav
 /* -- Hobbies */
 #hobbies
     +right-box
+
+    & h2
+        +icon-pacman
 
 /* -- Footer */
 footer
