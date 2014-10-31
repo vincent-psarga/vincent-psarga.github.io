@@ -19,7 +19,7 @@
 body {
   font-family: "Fjord One", serif;
   margin-top: 10px;
-  background: #ececec; }
+  background: #efefef; }
 
 h1, h2, h3 {
   font-family: "Oswald", sans-serif; }
@@ -149,7 +149,7 @@ header {
     margin-top: 10px;
     margin-bottom: 10px; }
     header #address > p {
-      padding-left: 10px; }
+      margin-left: 20px; }
       header #address > p:before {
         font-family: "icomoon";
         speak: none;
@@ -164,7 +164,9 @@ header {
         content: "\e600"; }
       header #address > p:before {
         position: absolute;
-        left: -5px; }
+        top: 5px;
+        left: -5px;
+        color: #3680a4; }
 
 #education {
   margin-bottom: 30px;
@@ -373,28 +375,31 @@ footer {
     padding-right: 5px;
     content: "\e607"; }
   #experience a.where {
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+    box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     display: inline-block;
     text-align: center;
     min-width: 105px;
     max-width: 300px;
-    border: 1px solid #555555;
+    border: 1px solid #3680a4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     background: white;
     background-repeat: no-repeat;
     background-position: center 10px;
     float: right;
-    padding: 10px;
+    padding: 5px;
+    padding-top: 30px;
     margin: 10px; }
     #experience a.where.where-smartesting {
-      padding-top: 65px;
       background-image: url("../images/logos/smartesting.png"); }
     #experience a.where.where-zest {
-      padding-top: 38px;
       background-image: url("../images/logos/zest.png"); }
     #experience a.where.where-bleu-vert {
-      padding-top: 31px;
       background-image: url("../images/logos/bleu-vert.png"); }
     #experience a.where.where-lifc {
-      padding-top: 115px;
       background-image: url("../images/logos/lifc.png"); }
   #experience .keywords {
     clear: both; }

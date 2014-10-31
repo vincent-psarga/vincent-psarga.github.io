@@ -7,18 +7,19 @@ $large: 20px
 $xlarge: 30px
 $xxlarge: 45px
 
+$background: #efefef
 
-$background: #ececec
-$main-color: #3680A4
+$main-color: #3680A4 /* #932F6C */
 $main-xlightened: lighten($main-color, 20%)
 $main-lightened: lighten($main-color, 10%)
 $main-darkened: darken($main-color, 10%)
 
+$secondary-color: #ff714b
 
 =shadowed
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
-    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75)
-    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75)
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35)
+    -moz-box-shadow:    3px 3px 2px 0px rgba(50, 50, 50, 0.35)
+    box-shadow:         3px 3px 2px 0px rgba(50, 50, 50, 0.35)
 
 =box-title
     color: $main-color
@@ -207,10 +208,12 @@ header
         position: relative
         & > p
             +icon-location
-            padding-left: $medium
+            margin-left: $large
             &:before
                 position: absolute
+                top: $small
                 left: -$small
+                color: $main-color
 
         margin-top: $medium
         margin-bottom: $medium
@@ -281,33 +284,35 @@ footer
         +icon-office
 
     & a.where
+        +shadowed
         display: inline-block
         text-align: center
 
         min-width: 105px
         max-width: 300px
-        border: 1px solid #555
+        border: 1px solid $main-color
+        -webkit-border-radius: $small
+        -moz-border-radius: $small
+        border-radius: $small
         background: #fff
         background-repeat: no-repeat
         background-position: center 10px
         float: right
-        padding: $medium
+        padding: $small
+        padding-top: 20 + 2 * $small
         margin: $medium
 
+
         &.where-smartesting
-            padding-top: 65px
             background-image: url('../images/logos/smartesting.png')
 
         &.where-zest
-            padding-top: 38px
             background-image: url('../images/logos/zest.png')
 
         &.where-bleu-vert
-            padding-top: 31px
             background-image: url('../images/logos/bleu-vert.png')
         
         &.where-lifc
-            padding-top: 115px
             background-image: url('../images/logos/lifc.png')
 
     & .keywords

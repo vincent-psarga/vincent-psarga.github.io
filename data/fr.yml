@@ -68,13 +68,7 @@ experience:
          * [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
          * [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
         
-        Ces sites ont été développés avec PHP/MySQL. Le système de templates Smarty a été utilisé afin de permettre la collaboration avec un graphiste chargé du style du site
-
-keywords:
-  continuous-integration: "Intégration continue"
-  continuous-deployement: "Déploiement continu"
-  test-generation: "Génération de tests"
-  components: composants
+        Ces sites ont été développés avec PHP/MySQL. Le système de templates Smarty a été utilisé afin de permettre la collaboration avec un graphiste chargé du style du site.
 
 education: 
   title: Diplômes
@@ -87,9 +81,15 @@ education:
 hobbie:
   title: "Loisirs"
   body: |
-    Je pratique diverses activitées sportives en extérieur telles que la randonnée, l'escalade et le ski.
+    Je pratique diverses activitées sportives en extérieur telles que la randonnée, l'escalade et le ski.  
     Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reocnstitution au sein de l'association Ad Honores. 
 
 places:
   ufc: 
     name: "Université de Franche-Comté"
+
+keywords:
+  continuous-integration: "Intégration continue"
+  continuous-deployement: "Déploiement continu"
+  test-generation: "Génération de tests"
+  components: composants
