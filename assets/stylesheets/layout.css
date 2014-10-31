@@ -61,10 +61,7 @@ article {
 
 header {
   margin-bottom: 30px;
-  padding: 5px;
-  width: 30%;
-  float: left;
-  margin-left: 5%; }
+  padding: 5px; }
   header h1, header h2 {
     color: #3680a4;
     padding: 5px;
@@ -74,6 +71,15 @@ header {
     margin-left: -5px; }
   header h3 {
     color: #4a9cc3; }
+  @media (max-width: 600px) {
+    header {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  @media (min-width: 600px) {
+    header {
+      margin-left: 5%;
+      width: 30%;
+      float: left; } }
   header .avatar {
     background: white;
     -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
@@ -192,9 +198,6 @@ header {
 #education {
   margin-bottom: 30px;
   padding: 5px;
-  width: 30%;
-  float: left;
-  margin-left: 5%;
   font-size: 80%; }
   #education h1, #education h2 {
     color: #3680a4;
@@ -205,6 +208,15 @@ header {
     margin-left: -5px; }
   #education h3 {
     color: #4a9cc3; }
+  @media (max-width: 600px) {
+    #education {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  @media (min-width: 600px) {
+    #education {
+      margin-left: 5%;
+      width: 30%;
+      float: left; } }
   #education h2:before {
     font-family: "icomoon";
     speak: none;
@@ -221,9 +233,6 @@ header {
 #skills {
   margin-bottom: 30px;
   padding: 5px;
-  width: 30%;
-  float: left;
-  margin-left: 5%;
   font-size: 80%; }
   #skills h1, #skills h2 {
     color: #3680a4;
@@ -234,6 +243,15 @@ header {
     margin-left: -5px; }
   #skills h3 {
     color: #4a9cc3; }
+  @media (max-width: 600px) {
+    #skills {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  @media (min-width: 600px) {
+    #skills {
+      margin-left: 5%;
+      width: 30%;
+      float: left; } }
   #skills h2:before {
     font-family: "icomoon";
     speak: none;
@@ -342,10 +360,7 @@ footer {
 
 #resume {
   margin-bottom: 30px;
-  padding: 5px;
-  width: 55%;
-  float: right;
-  margin-right: 5%; }
+  padding: 5px; }
   #resume h1, #resume h2 {
     color: #3680a4;
     padding: 5px;
@@ -355,6 +370,15 @@ footer {
     margin-left: -5px; }
   #resume h3 {
     color: #4a9cc3; }
+  @media (max-width: 600px) {
+    #resume {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  @media (min-width: 600px) {
+    #resume {
+      margin-right: 5%;
+      width: 55%;
+      float: right; } }
   #resume h2:before {
     font-family: "icomoon";
     speak: none;
@@ -370,10 +394,7 @@ footer {
 
 #experience {
   margin-bottom: 30px;
-  padding: 5px;
-  width: 55%;
-  float: right;
-  margin-right: 5%; }
+  padding: 5px; }
   #experience h1, #experience h2 {
     color: #3680a4;
     padding: 5px;
@@ -383,6 +404,15 @@ footer {
     margin-left: -5px; }
   #experience h3 {
     color: #4a9cc3; }
+  @media (max-width: 600px) {
+    #experience {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  @media (min-width: 600px) {
+    #experience {
+      margin-right: 5%;
+      width: 55%;
+      float: right; } }
   #experience h2:before {
     font-family: "icomoon";
     speak: none;
@@ -465,10 +495,7 @@ footer {
 
 #hobbies {
   margin-bottom: 30px;
-  padding: 5px;
-  width: 55%;
-  float: right;
-  margin-right: 5%; }
+  padding: 5px; }
   #hobbies h1, #hobbies h2 {
     color: #3680a4;
     padding: 5px;
@@ -478,6 +505,15 @@ footer {
     margin-left: -5px; }
   #hobbies h3 {
     color: #4a9cc3; }
+  @media (max-width: 600px) {
+    #hobbies {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  @media (min-width: 600px) {
+    #hobbies {
+      margin-right: 5%;
+      width: 55%;
+      float: right; } }
   #hobbies h2:before {
     font-family: "icomoon";
     speak: none;

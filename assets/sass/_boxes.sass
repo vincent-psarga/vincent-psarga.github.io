@@ -2,6 +2,8 @@
 @import 'assets/sass/_fonts'
 @import 'assets/sass/_sizes'
 
+$break-one-column: 600px
+
 =shadowed
     -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35)
     -moz-box-shadow:    3px 3px 2px 0px rgba(50, 50, 50, 0.35)
@@ -26,17 +28,26 @@
     & h3
         color: $main-lightened
 
+    @media (max-width: $break-one-column)
+        margin-left: $large
+        margin-right: $large
+
 =left-box
     +box
-    width: 30%
-    float: left
-    margin-left: 5%
+
+    @media (min-width: $break-one-column)
+        margin-left: 5%
+        width: 30%
+        float: left
 
 =right-box
     +box
-    width: 55%
-    float: right
-    margin-right: 5%
+
+    @media (min-width: $break-one-column)
+        margin-right: 5%
+        width: 55%
+        float: right
+
 
 =wide-box($position)
     display: block

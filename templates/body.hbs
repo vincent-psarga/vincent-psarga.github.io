@@ -58,6 +58,7 @@
 					{{{md resume.body }}}
 				</article>
 			</section>
+
 			<section id="experience">
 				<h2>{{ experience.title }}</h2>
 				{{#each experience.data}}
@@ -76,6 +77,17 @@
 				</article>
 				{{/each}}
 			</section>
+
+			<section id="skills">
+				<h2>{{ skills.title }}</h2>
+				<dl>
+				{{#each skills.data}}
+					<dt>{{this.title}}</dt>
+					<dd>{{join this.body ', '}}</dd>
+				{{/each}}
+				</dl>
+			</section>
+
 			<section id="education">
 				<h2>{{ education.title }}</h2>
 				{{#each education.data}}
@@ -86,15 +98,7 @@
 				</article>
 				{{/each}}
 			</section>
-			<section id="skills">
-				<h2>{{ skills.title }}</h2>
-				<dl>
-				{{#each skills.data}}
-					<dt>{{this.title}}</dt>
-					<dd>{{join this.body ', '}}</dd>
-				{{/each}}
-				</dl>
-			</section>
+
 			<section id="hobbies">
 				<h2>{{ hobbie.title }}</h2>
 				{{{md hobbie.body }}}
