@@ -83,11 +83,7 @@ hobbie:
   title: "Loisirs"
   body: |
     Je pratique diverses activitées sportives en extérieur telles que la randonnée, l'escalade et le ski.  
-    Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reocnstitution au sein de l'association Ad Honores. 
-
-places:
-  ufc: 
-    name: "Université de Franche-Comté"
+    Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reconstitution au sein de l'association Ad Honores.
 
 keywords:
   continuous-integration: "Intégration continue"

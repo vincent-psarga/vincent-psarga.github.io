@@ -419,6 +419,7 @@ footer {
     box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     display: inline-block;
     text-align: center;
+    font-size: 80%;
     background-repeat: no-repeat;
     background-position: center 10px;
     float: right;
