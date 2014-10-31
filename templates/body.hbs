@@ -6,12 +6,12 @@
 		<link href='http://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
 		<link href="assets/stylesheets/layout.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="assets/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-		<title>Vincent Prêtre - {{ about.title}}</title>
+		<title>{{ about.name }} - {{ about.title}}</title>
 	</head>
 	<body>
 		<header>
 			<img class="avatar" src="{{ about.avatar}} " alt="" />
-			<h1>Vincent Prêtre</h1>
+			<h1>{{ about.name }}</h1>
 			<span class="headline">{{ about.title }}</span>
 			<div id="address">{{{md about.address}}}</div>
 			<ul id="contacts">
@@ -88,7 +88,7 @@
 				<dl>
 				{{#each skills.data}}
 					<dt>{{this.title}}</dt>
-					<dd>{{this.body}}</dd>
+					<dd>{{join this.body ', '}}</dd>
 				{{/each}}
 				</dl>
 			</section>

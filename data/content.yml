@@ -28,7 +28,36 @@ resume:
   empty: 1
 
 skills:
-  empty: 1
+  data:
+    -
+      title: Langs
+      body:
+        - French
+        - English
+    -
+      title: Languages
+      body:
+        - Ruby
+        - Python
+        - Javascript
+    -
+      title: "Web frameworks"
+      body:
+       - Ember.js
+       - "Ruby on Rails"
+       - Plone
+       - Django
+    -
+      title: Web
+      body:
+        - HTML5
+        - CSS
+        - Sass
+    -
+      title: Tools
+      body:
+        - Git
+        - Puppet
 
 experience:
   data:

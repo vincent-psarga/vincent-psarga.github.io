@@ -8,22 +8,6 @@ resume:
 
 skills:
   title: "Compétences"
-  data:
-    -
-      title: Langues
-      body: "Français, Anglais"
-    -
-      title: Langages
-      body: "Ruby, Python, Javascript"
-    - 
-      title: "Frameworks web"
-      body: "Ember.js, Ruby on Rails, Plone, Django"
-    -
-      title: "Web"
-      body: "HTML5, CSS, Sass"
-    -
-      title: "Outils"
-      body: "Git, Puppet"
 
 experience:
   title: Expérience
@@ -90,3 +74,9 @@ keywords:
   continuous-deployement: "Déploiement continu"
   test-generation: "Génération de tests"
   components: composants
+  Langs: Langues
+  French: Français
+  English: Anglais
+  Languages: Langages
+  "Web frameworks": "Frameworks web"
+  Tools: Outils

@@ -17,6 +17,10 @@ class CVMaker
     @handlebars.register_helper('md') do |context, value|
       Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(value)
     end
+
+    @handlebars.register_helper('join') do |context, items, joiner|
+      "#{items.join(joiner)}"
+    end
   end
 
   def template

@@ -8,37 +8,54 @@ class Localizer
   	['title', 'body']
   end
 
-  def get_item(d, path)
+  def get_item(d, p)
+  	path = p.clone
     item = d
+
     until path.empty?
+      break if item.nil?
       item = item[path.shift]
     end
     item
   end
 
-  def localize(path)
-    item = get_item(@context, path.clone)
-    locale = get_item(@i18n, path.clone)
+  def walk(path = [], &block)
+  	item = get_item(@context, path)
+  	next_keys = []
+
+  	yield item, path.clone
+
+  	if item.is_a? Hash
+  	  next_keys = item.keys
+  	end
+
+  	if item.is_a? Array
+  	  next_keys = (0 .. item.size)
+  	end
+
+  	next_keys.each {|k| walk(path.clone.concat([k]), &block)}
+  end
+
+  def localize(item, path)
+    locale = get_item(@i18n, path)
     return if locale.nil?
 
-    localized_attributes.each {|key| item[key] = locale[key]}
+    localized_attributes.each do |key|
+      next if locale[key].nil?
+      item[key] = locale[key]
+    end
   end
 
   def localize_context
-    @context.keys.each {|k| localize([k])}
+  	walk do |item, path|
+  	  if item.is_a?(Hash)
+	    localize(item, path)
+	  end
 
-    @context['experience']['data'].keys.each do |id|
-      localize(['experience', 'data', id])
-      @context['experience']['data'][id]['keywords'].map! do |kw|
-        @i18n['keywords'][kw] || kw
-      end
-    end
-
-    @context['education']['data'].keys.each do |id|
-      localize(['education', 'data', id])
-    end
-
-    @context['skills']['data'] = @i18n['skills']['data']
+  	  if item.is_a?(String)
+  	  	key = path.pop
+  	  	get_item(@context, path)[key] = @i18n['keywords'][item] || item
+  	  end
+  	end
   end
-
 end
