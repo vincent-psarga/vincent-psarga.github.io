@@ -283,6 +283,14 @@ footer
     & h2
         +icon-office
 
+    & span.dates
+        +icon-calendar
+        color: $main-darkened
+        display: block
+        margin-top: $small
+        margin-bottom: $medium
+
+
     & a.where
         display: inline-block
         text-align: center
@@ -317,6 +325,7 @@ footer
     & .keywords
         clear: both
         +icon-tag
+        color: $main-darkened
 
         & li
             +inline-list
@@ -326,6 +335,7 @@ footer
             background: lighten($main-color, 50%)
             padding: $small
             margin-bottom: $small
+            margin-left: 0
             -webkit-border-radius: $small
             -moz-border-radius: $small
             border-radius: $small
