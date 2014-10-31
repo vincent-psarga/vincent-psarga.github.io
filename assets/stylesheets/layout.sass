@@ -1,5 +1,5 @@
-$titles-font: 'Droid Sans', sans-serif
-$content-font: 'Arial', sans-serif
+$titles-font: 'Oswald', sans-serif
+$content-font: 'Fjord One', serif
 
 $small: 5px
 $medium: 10px
@@ -22,7 +22,6 @@ $main-darkened: darken($main-color, 10%)
 
 =box-title
     color: $main-color
-    border-bottom: 1px solid $main-color
 
     padding: $small
     margin-top: 0
@@ -51,6 +50,21 @@ $main-darkened: darken($main-color, 10%)
     width: 55%
     float: right
     margin-right: 5%
+
+=wide-box($position)
+    display: block
+    width: 100%
+
+    background: $main-xlightened
+    padding: $small 0px
+
+    border-top: 1px solid $main-darkened
+    border-bottom: 1px solid $main-darkened
+
+    & a
+        color: $main-darkened
+        &:hover
+            color: #fff
 
 =inline-list
     list-style-type: none
@@ -131,7 +145,7 @@ $main-darkened: darken($main-color, 10%)
 
 body
     font-family: $content-font
-    margin-top: $xxlarge
+    margin-top: $medium
     background: $background
 
 h1, h2, h3
@@ -139,8 +153,11 @@ h1, h2, h3
 
 a
     color: $main-lightened
+    text-decoration: none
+
     &:hover
         color: $main-darkened
+        text-decoration: underline
 
 article
     margin-bottom: $large
@@ -168,7 +185,6 @@ header
             +inline-list
             & a
                 display: inline-block
-                text-decoration: none
                 font-size: $large
                 width: $large
                 height: $large
@@ -213,27 +229,8 @@ header
 
     font-size: 80%
 
-=wide-box($position)
-    display: block
-    width: 100%
-
-    background: $main-xlightened
-    padding: $small 0px
-
-    border-top: 1px solid $main-darkened
-    border-bottom: 1px solid $main-darkened
-
-    & a
-        color: $main-darkened
-        text-decoration: none
-
-        &:hover
-            color: #fff
-            text-decoration: underline
-
-
 nav
-    +wide-box(top)
+    display: none
     position: absolute
     top: 0px
 
@@ -279,7 +276,6 @@ footer
     & a.where
         display: inline-block
         text-align: center
-        text-decoration: none
 
         min-width: 105px
         max-width: 300px

@@ -17,17 +17,19 @@
   padding: 0px; }
 
 body {
-  font-family: "Arial", sans-serif;
-  margin-top: 45px;
+  font-family: "Fjord One", serif;
+  margin-top: 10px;
   background: #ececec; }
 
 h1, h2, h3 {
-  font-family: "Droid Sans", sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 a {
-  color: #4a9cc3; }
+  color: #4a9cc3;
+  text-decoration: none; }
   a:hover {
-    color: #29627e; }
+    color: #29627e;
+    text-decoration: underline; }
 
 article {
   margin-bottom: 20px; }
@@ -47,7 +49,6 @@ header {
   margin-left: 5%; }
   header h1, header h2 {
     color: #3680a4;
-    border-bottom: 1px solid #3680a4;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -66,7 +67,6 @@ header {
     margin-right: 5px; }
     header #contacts li a {
       display: inline-block;
-      text-decoration: none;
       font-size: 20px;
       width: 20px;
       height: 20px;
@@ -175,7 +175,6 @@ header {
   font-size: 80%; }
   #education h1, #education h2 {
     color: #3680a4;
-    border-bottom: 1px solid #3680a4;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -205,7 +204,6 @@ header {
   font-size: 80%; }
   #skills h1, #skills h2 {
     color: #3680a4;
-    border-bottom: 1px solid #3680a4;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -227,20 +225,9 @@ header {
     content: "\e60e"; }
 
 nav {
-  display: block;
-  width: 100%;
-  background: #70b1d0;
-  padding: 5px 0px;
-  border-top: 1px solid #29627e;
-  border-bottom: 1px solid #29627e;
+  display: none;
   position: absolute;
   top: 0px; }
-  nav a {
-    color: #29627e;
-    text-decoration: none; }
-    nav a:hover {
-      color: white;
-      text-decoration: underline; }
   nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -320,11 +307,9 @@ footer {
   text-align: center;
   clear: both; }
   footer a {
-    color: #29627e;
-    text-decoration: none; }
+    color: #29627e; }
     footer a:hover {
-      color: white;
-      text-decoration: underline; }
+      color: white; }
 
 #resume {
   margin-bottom: 30px;
@@ -334,7 +319,6 @@ footer {
   margin-right: 5%; }
   #resume h1, #resume h2 {
     color: #3680a4;
-    border-bottom: 1px solid #3680a4;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -363,7 +347,6 @@ footer {
   margin-right: 5%; }
   #experience h1, #experience h2 {
     color: #3680a4;
-    border-bottom: 1px solid #3680a4;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -386,7 +369,6 @@ footer {
   #experience a.where {
     display: inline-block;
     text-align: center;
-    text-decoration: none;
     min-width: 105px;
     max-width: 300px;
     border: 1px solid #555555;
@@ -443,7 +425,6 @@ footer {
   margin-right: 5%; }
   #hobbies h1, #hobbies h2 {
     color: #3680a4;
-    border-bottom: 1px solid #3680a4;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;

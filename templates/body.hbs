@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
 		<link href="assets/stylesheets/icons.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="assets/stylesheets/layout.css" media="all" rel="stylesheet" type="text/css" />
 	</head>
@@ -82,6 +83,12 @@
 			</section>
 			<section id="skills">
 				<h2>{{ skills.title }}</h2>
+				<dl>
+				{{#each skills.data}}
+					<dt>{{this.title}}</dt>
+					<dd>{{this.body}}</dd>
+				{{/each}}
+				</dl>
 			</section>
 			<section id="hobbies">
 				<h2>{{ hobbie.title }}</h2>

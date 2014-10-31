@@ -61,6 +61,8 @@ class CVMaker
     @context['education']['data'].keys.each do |id|
       localize(['education', 'data', id])
     end
+
+    @context['skills']['data'] = @i18n['skills']['data']
   end
 
   def context

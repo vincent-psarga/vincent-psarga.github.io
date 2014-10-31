@@ -8,6 +8,22 @@ resume:
 
 skills:
   title: "Compétences"
+  data:
+    -
+      title: Langues
+      body: "Français, Anglais"
+    -
+      title: Languages
+      body: "Ruby, Python, Javascript"
+    - 
+      title: "Frameworks web"
+      body: "Ember.js, Ruby on Rails, Plone, Django"
+    -
+      title: "Web"
+      body: "HTML5, CSS"
+    -
+      title: "Outils"
+      body: "Git, Puppet"
 
 experience:
   title: Expérience
@@ -48,7 +64,7 @@ experience:
       title: "Développeur web (PHP)"
       body: |
         Lors de mon stage chez Bleu-Vert, j’ai travaillé sur deux sites:
-        
+
          * [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
          * [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
         
