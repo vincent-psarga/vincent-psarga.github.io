@@ -71,11 +71,11 @@ header {
     margin-left: -5px; }
   header h3 {
     color: #4a9cc3; }
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     header {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 40em) {
     header {
       margin-left: 5%;
       width: 30%;
@@ -208,11 +208,11 @@ header {
     margin-left: -5px; }
   #education h3 {
     color: #4a9cc3; }
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     #education {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 40em) {
     #education {
       margin-left: 5%;
       width: 30%;
@@ -243,11 +243,11 @@ header {
     margin-left: -5px; }
   #skills h3 {
     color: #4a9cc3; }
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     #skills {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 40em) {
     #skills {
       margin-left: 5%;
       width: 30%;
@@ -370,11 +370,11 @@ footer {
     margin-left: -5px; }
   #resume h3 {
     color: #4a9cc3; }
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     #resume {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 40em) {
     #resume {
       margin-right: 5%;
       width: 55%;
@@ -404,11 +404,11 @@ footer {
     margin-left: -5px; }
   #experience h3 {
     color: #4a9cc3; }
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     #experience {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 40em) {
     #experience {
       margin-right: 5%;
       width: 55%;
@@ -505,11 +505,11 @@ footer {
     margin-left: -5px; }
   #hobbies h3 {
     color: #4a9cc3; }
-  @media (max-width: 600px) {
+  @media (max-width: 40em) {
     #hobbies {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 40em) {
     #hobbies {
       margin-right: 5%;
       width: 55%;
