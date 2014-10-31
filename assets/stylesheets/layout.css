@@ -1,4 +1,3 @@
-/* Palette URL: http://paletton.com/#uid=12t0u0kllll1l2Eblb+vluGW+T3 */
 .location:before {
   font-family: "icomoon";
   speak: none;
@@ -19,15 +18,16 @@
 
 body {
   font-family: "Arial", sans-serif;
-  color: #569dc0;
   margin-top: 45px;
-  background: #e3f0f6; }
+  background: #ececec; }
 
 h1, h2, h3 {
   font-family: "Droid Sans", sans-serif; }
 
 a {
-  color: #7ebbd9; }
+  color: #4a9cc3; }
+  a:hover {
+    color: #29627e; }
 
 article {
   margin-bottom: 20px; }
@@ -40,39 +40,25 @@ article {
       margin-left: 10px; }
 
 header {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #3680a4;
-  background: #d0e5f0;
   width: 30%;
   float: left;
   margin-left: 5%; }
-  header h1 {
+  header h1, header h2 {
     color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
+    border-bottom: 1px solid #3680a4;
     padding: 5px;
-    margin-top: 10px;
-    margin-right: -10px;
+    margin-top: 0;
+    margin-right: -5px;
     margin-bottom: 5px;
-    margin-left: -10px; }
-  header h2 {
-    color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
-    padding: 5px;
-    margin-top: 0px;
-    margin-right: -10px;
-    margin-bottom: 5px;
-    margin-left: -10px; }
+    margin-left: -5px; }
   header h3 {
-    color: #569dc0; }
+    color: #4a9cc3; }
   header .avatar {
     float: left;
     margin: 5px;
+    z-index: 10;
     border: 1px solid #3680a4; }
   header #contacts li {
     list-style-type: none;
@@ -85,8 +71,6 @@ header {
       width: 20px;
       height: 20px;
       overflow: hidden; }
-      header #contacts li a:hover {
-        color: #3680a4; }
       header #contacts li a.mail:before {
         font-family: "icomoon";
         speak: none;
@@ -183,37 +167,22 @@ header {
         left: -5px; }
 
 #education {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #3680a4;
-  background: #d0e5f0;
   width: 30%;
   float: left;
   margin-left: 5%;
   font-size: 80%; }
-  #education h1 {
+  #education h1, #education h2 {
     color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
+    border-bottom: 1px solid #3680a4;
     padding: 5px;
-    margin-top: 10px;
-    margin-right: -10px;
+    margin-top: 0;
+    margin-right: -5px;
     margin-bottom: 5px;
-    margin-left: -10px; }
-  #education h2 {
-    color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
-    padding: 5px;
-    margin-top: 0px;
-    margin-right: -10px;
-    margin-bottom: 5px;
-    margin-left: -10px; }
+    margin-left: -5px; }
   #education h3 {
-    color: #569dc0; }
+    color: #4a9cc3; }
   #education h2:before {
     font-family: "icomoon";
     speak: none;
@@ -228,37 +197,22 @@ header {
     content: "\e60b"; }
 
 #skills {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #3680a4;
-  background: #d0e5f0;
   width: 30%;
   float: left;
   margin-left: 5%;
   font-size: 80%; }
-  #skills h1 {
+  #skills h1, #skills h2 {
     color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
+    border-bottom: 1px solid #3680a4;
     padding: 5px;
-    margin-top: 10px;
-    margin-right: -10px;
+    margin-top: 0;
+    margin-right: -5px;
     margin-bottom: 5px;
-    margin-left: -10px; }
-  #skills h2 {
-    color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
-    padding: 5px;
-    margin-top: 0px;
-    margin-right: -10px;
-    margin-bottom: 5px;
-    margin-left: -10px; }
+    margin-left: -5px; }
   #skills h3 {
-    color: #569dc0; }
+    color: #4a9cc3; }
   #skills h2:before {
     font-family: "icomoon";
     speak: none;
@@ -273,123 +227,121 @@ header {
     content: "\e60e"; }
 
 nav {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  position: fixed;
-  top: 0px;
   display: block;
   width: 100%;
-  border-bottom: 1px solid #3680a4;
-  background: #7ebbd9; }
-  nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 5px;
-    padding: 5px; }
-  nav ul.sections {
-    float: left; }
-  nav ul.langs {
-    float: right; }
+  background: #70b1d0;
+  padding: 5px 0px;
+  border-top: 1px solid #29627e;
+  border-bottom: 1px solid #29627e;
+  position: absolute;
+  top: 0px; }
   nav a {
-    color: #3680a4;
+    color: #29627e;
     text-decoration: none; }
     nav a:hover {
       color: white;
       text-decoration: underline; }
-    nav a.link-to-resume:before {
-      font-family: "icomoon";
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-right: 5px;
-      content: "\e608"; }
-    nav a.link-to-experience:before {
-      font-family: "icomoon";
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-right: 5px;
-      content: "\e607"; }
-    nav a.link-to-education:before {
-      font-family: "icomoon";
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-right: 5px;
-      content: "\e60b"; }
-    nav a.link-to-skills:before {
-      font-family: "icomoon";
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-right: 5px;
-      content: "\e60e"; }
-    nav a.link-to-hobbies:before {
-      font-family: "icomoon";
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      padding-right: 5px;
-      content: "\e60a"; }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px; }
+  nav ul.sections {
+    float: left; }
+  nav ul.langs {
+    float: right; }
+  nav a.link-to-resume:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e608"; }
+  nav a.link-to-experience:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e607"; }
+  nav a.link-to-education:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e60b"; }
+  nav a.link-to-skills:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e60e"; }
+  nav a.link-to-hobbies:before {
+    font-family: "icomoon";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 5px;
+    content: "\e60a"; }
 
-/* -- Resume */
+footer {
+  display: block;
+  width: 100%;
+  background: #70b1d0;
+  padding: 5px 0px;
+  border-top: 1px solid #29627e;
+  border-bottom: 1px solid #29627e;
+  text-align: center;
+  clear: both; }
+  footer a {
+    color: #29627e;
+    text-decoration: none; }
+    footer a:hover {
+      color: white;
+      text-decoration: underline; }
+
 #resume {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #3680a4;
-  background: #d0e5f0;
   width: 55%;
   float: right;
   margin-right: 5%; }
-  #resume h1 {
+  #resume h1, #resume h2 {
     color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
+    border-bottom: 1px solid #3680a4;
     padding: 5px;
-    margin-top: 10px;
-    margin-right: -10px;
+    margin-top: 0;
+    margin-right: -5px;
     margin-bottom: 5px;
-    margin-left: -10px; }
-  #resume h2 {
-    color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
-    padding: 5px;
-    margin-top: 0px;
-    margin-right: -10px;
-    margin-bottom: 5px;
-    margin-left: -10px; }
+    margin-left: -5px; }
   #resume h3 {
-    color: #569dc0; }
+    color: #4a9cc3; }
   #resume h2:before {
     font-family: "icomoon";
     speak: none;
@@ -403,38 +355,22 @@ nav {
     padding-right: 5px;
     content: "\e608"; }
 
-/* -- Experience */
 #experience {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #3680a4;
-  background: #d0e5f0;
   width: 55%;
   float: right;
   margin-right: 5%; }
-  #experience h1 {
+  #experience h1, #experience h2 {
     color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
+    border-bottom: 1px solid #3680a4;
     padding: 5px;
-    margin-top: 10px;
-    margin-right: -10px;
+    margin-top: 0;
+    margin-right: -5px;
     margin-bottom: 5px;
-    margin-left: -10px; }
-  #experience h2 {
-    color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
-    padding: 5px;
-    margin-top: 0px;
-    margin-right: -10px;
-    margin-bottom: 5px;
-    margin-left: -10px; }
+    margin-left: -5px; }
   #experience h3 {
-    color: #569dc0; }
+    color: #4a9cc3; }
   #experience h2:before {
     font-family: "icomoon";
     speak: none;
@@ -490,46 +426,31 @@ nav {
       list-style-type: none;
       display: inline-block;
       margin-right: 5px;
-      border: 1px solid #7ebbd9;
-      background: #e0eff6;
+      font-size: 80%;
+      border: 1px solid #3680a4;
+      background: #e3f0f6;
       padding: 5px;
       margin-bottom: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px; }
 
-/* -- Hobbies */
 #hobbies {
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   margin-bottom: 30px;
   padding: 5px;
-  border: 1px solid #3680a4;
-  background: #d0e5f0;
   width: 55%;
   float: right;
   margin-right: 5%; }
-  #hobbies h1 {
+  #hobbies h1, #hobbies h2 {
     color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
+    border-bottom: 1px solid #3680a4;
     padding: 5px;
-    margin-top: 10px;
-    margin-right: -10px;
+    margin-top: 0;
+    margin-right: -5px;
     margin-bottom: 5px;
-    margin-left: -10px; }
-  #hobbies h2 {
-    color: #3680a4;
-    border: 1px solid #3680a4;
-    background: #7ebbd9;
-    padding: 5px;
-    margin-top: 0px;
-    margin-right: -10px;
-    margin-bottom: 5px;
-    margin-left: -10px; }
+    margin-left: -5px; }
   #hobbies h3 {
-    color: #569dc0; }
+    color: #4a9cc3; }
   #hobbies h2:before {
     font-family: "icomoon";
     speak: none;
@@ -542,14 +463,3 @@ nav {
     -moz-osx-font-smoothing: grayscale;
     padding-right: 5px;
     content: "\e60a"; }
-
-/* -- Footer */
-footer {
-  text-align: center;
-  clear: both;
-  border-top: 1px solid #3680a4;
-  background: #7ebbd9;
-  color: #3680a4;
-  padding: 5px; }
-  footer a {
-    color: #1d6d93; }

@@ -8,45 +8,37 @@ $xlarge: 30px
 $xxlarge: 45px
 
 
-/* Palette URL: http://paletton.com/#uid=12t0u0kllll1l2Eblb+vluGW+T3 */
-$color-primary-0: #569DC0
-$color-primary-1: #B1DAEE
-$color-primary-2: #7EBBD9
-$color-primary-3: #3680A4
-$color-primary-4: #1D6D93
+$background: #ececec
+$main-color: #3680A4
+$main-xlightened: lighten($main-color, 20%)
+$main-lightened: lighten($main-color, 10%)
+$main-darkened: darken($main-color, 10%)
+
 
 =shadowed
     -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
     -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75)
     box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 
-=box-title($top)
-    color: $color-primary-3
-    border: 1px solid $color-primary-3
-    background: $color-primary-2
+=box-title
+    color: $main-color
+    border-bottom: 1px solid $main-color
 
     padding: $small
-    margin-top: $top
-    margin-right: -$medium
+    margin-top: 0
+    margin-right: -$small
     margin-bottom: $small
-    margin-left: -$medium
+    margin-left: -$small
 
 =box
-    +shadowed
     margin-bottom: $xlarge
     padding: $small
-    border: 1px solid $color-primary-3
-    background: lighten($color-primary-3, 45%)
 
-    & h1
-        +box-title($medium)
-
-    & h2
-        +box-title(0px)
+    & h1, h2
+        +box-title
 
     & h3
-        color: $color-primary-0
-
+        color: $main-lightened
 
 =left-box
     +box
@@ -139,16 +131,16 @@ $color-primary-4: #1D6D93
 
 body
     font-family: $content-font
-    color: $color-primary-0
     margin-top: $xxlarge
-    background: lighten($color-primary-3, 50%)
-
+    background: $background
 
 h1, h2, h3
     font-family: $titles-font
 
 a
-    color: $color-primary-2
+    color: $main-lightened
+    &:hover
+        color: $main-darkened
 
 article
     margin-bottom: $large
@@ -168,7 +160,8 @@ header
     & .avatar
         float: left
         margin: $small
-        border: 1px solid $color-primary-3
+        z-index: 10
+        border: 1px solid $main-color
 
     & #contacts
         & li
@@ -180,9 +173,6 @@ header
                 width: $large
                 height: $large
                 overflow: hidden
-
-                &:hover
-                    color: $color-primary-3
 
                 &.mail
                     +icon-mail
@@ -223,21 +213,33 @@ header
 
     font-size: 80%
 
-nav
-    +shadowed
-    position: fixed
-    top: 0px
-
+=wide-box($position)
     display: block
     width: 100%
 
-    border-bottom: 1px solid $color-primary-3
-    background: $color-primary-2
+    background: $main-xlightened
+    padding: $small 0px
+
+    border-top: 1px solid $main-darkened
+    border-bottom: 1px solid $main-darkened
+
+    & a
+        color: $main-darkened
+        text-decoration: none
+
+        &:hover
+            color: #fff
+            text-decoration: underline
+
+
+nav
+    +wide-box(top)
+    position: absolute
+    top: 0px
 
     & ul
         & li
             +inline-list
-            padding: $small
 
         &.sections
             float: left
@@ -245,13 +247,6 @@ nav
         &.langs
             float: right
     & a
-        color: $color-primary-3
-        text-decoration: none
-
-        &:hover
-            color: #fff
-            text-decoration: underline
-
         &.link-to-resume
             +icon-quill
         &.link-to-experience
@@ -263,14 +258,17 @@ nav
         &.link-to-hobbies
             +icon-pacman
 
-/* -- Resume */
+footer
+    +wide-box(bottom)
+
+    text-align: center
+    clear: both
+
 #resume
     +right-box
 
     & h2
         +icon-quill
-
-/* -- Experience */
 
 #experience
     +right-box
@@ -315,8 +313,10 @@ nav
 
         & li
             +inline-list
-            border: 1px solid $color-primary-2
-            background: lighten($color-primary-2, 25%)
+
+            font-size: 80%
+            border: 1px solid $main-color
+            background: lighten($main-color, 50%)
             padding: $small
             margin-bottom: $small
             -webkit-border-radius: $small
@@ -324,20 +324,8 @@ nav
             border-radius: $small
 
 
-/* -- Hobbies */
 #hobbies
     +right-box
 
     & h2
         +icon-pacman
-
-/* -- Footer */
-footer
-    text-align: center
-    clear: both
-    border-top: 1px solid $color-primary-3
-    background: $color-primary-2
-    color: $color-primary-3
-    padding: $small
-    a
-        color: $color-primary-4
