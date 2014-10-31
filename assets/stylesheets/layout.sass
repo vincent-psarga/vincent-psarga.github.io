@@ -67,6 +67,11 @@ $secondary-color: #ff714b
         &:hover
             color: #fff
 
+=white-box
+    background: #fff
+    +shadowed
+
+
 =inline-list
     list-style-type: none
     display: inline-block
@@ -176,10 +181,10 @@ article
 header
     +left-box
     & .avatar
+        +white-box
         float: left
         margin: $small
-        z-index: 10
-        border: 1px solid $main-color
+        margin-right: $medium
 
     & #contacts
         & li
@@ -292,23 +297,17 @@ footer
 
 
     & a.where
+        +white-box
         display: inline-block
         text-align: center
 
-        min-width: 105px
-        max-width: 300px
-        border: 1px solid $main-color
-        -webkit-border-radius: $small
-        -moz-border-radius: $small
-        border-radius: $small
-        background: #fff
         background-repeat: no-repeat
         background-position: center 10px
+
         float: right
         padding: $small
         padding-top: 20 + 2 * $small
         margin: $medium
-
 
         &.where-smartesting
             background-image: url('../images/logos/smartesting.png')

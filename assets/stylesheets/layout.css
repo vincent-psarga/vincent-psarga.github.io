@@ -57,10 +57,13 @@ header {
   header h3 {
     color: #4a9cc3; }
   header .avatar {
+    background: white;
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+    box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     float: left;
     margin: 5px;
-    z-index: 10;
-    border: 1px solid #3680a4; }
+    margin-right: 10px; }
   header #contacts li {
     list-style-type: none;
     display: inline-block;
@@ -392,15 +395,12 @@ footer {
       padding-right: 5px;
       content: "\e60d"; }
   #experience a.where {
+    background: white;
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+    box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     display: inline-block;
     text-align: center;
-    min-width: 105px;
-    max-width: 300px;
-    border: 1px solid #3680a4;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background: white;
     background-repeat: no-repeat;
     background-position: center 10px;
     float: right;

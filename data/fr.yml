@@ -34,26 +34,27 @@ experience:
     4:
       title: "Développeur web (Plone, Django)"
       body: |
-        J’ai été durant plus d’un an responsable et principal développeur du site [Prettig Personeel](http://www.prettigpersoneel.nl), un logiciel de gestion de personnel en ligne.
+        J’ai été durant plus d’un an responsable et principal développeur du site [Prettig Personeel](http://www.prettigpersoneel.nl), un logiciel de gestion de personnel en ligne.  
         Mon rôle consistait à développer de nouvelles fonctionnalités, refactoriser le code et gérer les releases ainsi que le déploiement sur les sites de test et de production.
         
-        J’ai aussi été responsable du développement du site [Oldtimers Verzeken](http://www.oldtimers-verzekeren.nl) qui est un site de vente d’assurance pour les véhicules anciens.
-        A cette occasion, j’ai créé ZestMicroCMS, un système de gestion de contenu basé sur la plateforme Django dédié aux sites pour lesquels Plone est surdimensionné.
-        J’ai aussi participé à un certain nombre d’autres sites développés sous Plone. Pour [Lilly Medical] (http://www.lillymedical.com) j’ai été chargé de la compatibilité iPad et diverses autres tâches impliquant Javascript.
-        Pour [Minaraad] (http://www.minaraad.be) (site permettant de gérer les projets inter-commissions du gouvernement Belge) j’ai créé le système de gestion de projets.
+        J’ai aussi été responsable du développement du site [Oldtimers Verzeken](http://www.oldtimers-verzekeren.nl) qui est un site de vente d’assurance pour les véhicules anciens.  
+        A cette occasion, j’ai créé ZestMicroCMS, un système de gestion de contenu basé sur la plateforme Django dédié aux sites pour lesquels Plone est surdimensionné.  
+        J’ai aussi participé à un certain nombre d’autres sites développés sous Plone. Pour [Lilly Medical] (http://www.lillymedical.com) j’ai été chargé de la compatibilité iPad et diverses autres tâches impliquant Javascript.  
+        Pour [Minaraad] (http://www.minaraad.be) (site permettant de gérer les projets inter-commissions du gouvernement Belge) j’ai créé le système de gestion de projets.  
         J’ai aussi travaillé sur le projet Vagabonds (site permettant de recenser les infirmières libérales aux États-Unis, le site n’est pas encore en ligne). J’y ai intégré le système permettant aux utilisateurs de remplir leur profil.
         
-        Il arrive aussi que des clients nous contactent afin de mettre à jour des sites existants. J’ai ainsi été amené à travailler pour [VJ Movement] (http://www.vjmovement.com) (un journal en ligne) afin d’intégrer le nouveau thème, corriger certains bugs et intégrer les comics interactifs dans le site dédié aux illustrations ([Cartoon Movement](http://www.cartoonmovement.com).
-        J’ai aussi procedé à la mise à jour du site [Den Haag Ontmoetding](http://www.denhaagontmoetdenhaag.nl) (site permettant de gèrer les projets inter-écoles de la Haye) afin de corriger un certain nombre de problèmes.
-        J’ai créé la troisième version de [Franel] (franel.eu) (une plateforme d’apprentissage du Néerlandais et du Français). Ce site repose sur un service web contenant l’ensemble des données du systèmes (utilisateurs, leçons, résultats) et une base de données MySQL afin de cacher les données et éviter les appels rop fréquents au service web.
+        Il arrive aussi que des clients nous contactent afin de mettre à jour des sites existants. J’ai ainsi été amené à travailler pour [VJ Movement] (http://www.vjmovement.com) (un journal en ligne) afin d’intégrer le nouveau thème, corriger certains bugs et intégrer les comics interactifs dans le site dédié aux illustrations ([Cartoon Movement](http://www.cartoonmovement.com).  
+        J’ai aussi procedé à la mise à jour du site [Den Haag Ontmoetding](http://www.denhaagontmoetdenhaag.nl) (site permettant de gèrer les projets inter-écoles de la Haye) afin de corriger un certain nombre de problèmes.  
+        J’ai créé la troisième version de [Franel] (franel.eu) (une plateforme d’apprentissage du Néerlandais et du Français). Ce site repose sur un service web contenant l’ensemble des données du systèmes (utilisateurs, leçons, résultats) et une base de données MySQL afin de cacher les données et éviter les appels rop fréquents au service web.  
         J’ai été chargé des mises à jour de ces quatre derniers sites puisque je suis généralement responsable des projets développés sous Django. Je suis aussi chargé des tâches liées à Javascript.
     3:
       title: "Doctorat d’informatique (Validation des services web à l’aide de la génération automatique de tests)"
       body: |
-        J'ai créé la plateforme iTaC-QoS (iTaC Tests and Certifies Quality of Services). Celle-ci permet de valider des services web grâce à la génération de tests à partir de modèles UML.
+        J'ai créé la plateforme iTaC-QoS (iTaC Tests and Certifies Quality of Services). Celle-ci permet de valider des services web grâce à la génération de tests à partir de modèles UML.  
         Cette plateforme permet une automatisation complète du processus de test et de validation, la seule tâche devant être réalisée manuellement est la création du modèle.
         
-        Quatre articles concernant iTaC-QoS ont été publiés dans des journaux, conférences et workshop internationaux. De plus, j’ai effectué de nombreuses heures d’enseignement durant ces trois années, sur des domaines variés (bureautique, EJB, Intelligence Artificielle, Découverte de Java ...)
+        Quatre articles concernant iTaC-QoS ont été publiés dans des journaux, conférences et workshop internationaux.  
+        De plus, j’ai effectué de nombreuses heures d’enseignement durant ces trois années, sur des domaines variés (bureautique, EJB, Intelligence Artificielle, Découverte de Java ...)
     2:
       title: "Stage de master recherche (Multi-agents et composants pour la transmission vidéo)"
       body: |
@@ -66,7 +67,7 @@ experience:
         Lors de mon stage chez Bleu-Vert, j’ai travaillé sur deux sites:
 
          * [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
-         * [Guide Social](www.guidesocial.ch): création de l’interface d’administration.
+         * [Guide Social](http://www.guidesocial.ch): création de l’interface d’administration.
         
         Ces sites ont été développés avec PHP/MySQL. Le système de templates Smarty a été utilisé afin de permettre la collaboration avec un graphiste chargé du style du site.
 
