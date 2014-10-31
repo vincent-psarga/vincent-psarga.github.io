@@ -223,6 +223,12 @@ header {
     -moz-osx-font-smoothing: grayscale;
     padding-right: 5px;
     content: "\e60e"; }
+  #skills dt {
+    font-family: "Oswald", sans-serif; }
+    #skills dt:after {
+      content: ":"; }
+  #skills dd {
+    margin-left: 10px; }
 
 nav {
   display: none;

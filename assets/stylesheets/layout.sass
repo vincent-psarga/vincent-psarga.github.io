@@ -224,10 +224,17 @@ header
 
 #skills
     +left-box
+    font-size: 80%
+
     & h2
         +icon-hammer
 
-    font-size: 80%
+    & dt
+        font-family: $titles-font
+        &:after
+            content: ":"
+    & dd
+        margin-left: $medium
 
 nav
     display: none

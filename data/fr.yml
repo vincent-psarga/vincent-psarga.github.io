@@ -13,14 +13,14 @@ skills:
       title: Langues
       body: "Français, Anglais"
     -
-      title: Languages
+      title: Langages
       body: "Ruby, Python, Javascript"
     - 
       title: "Frameworks web"
       body: "Ember.js, Ruby on Rails, Plone, Django"
     -
       title: "Web"
-      body: "HTML5, CSS"
+      body: "HTML5, CSS, Sass"
     -
       title: "Outils"
       body: "Git, Puppet"
