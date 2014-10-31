@@ -1,17 +1,7 @@
 #!/usr/bin/env ruby
-require 'sass'
+require './lib/sass_compiler.rb'
 require './lib/cv_maker.rb'
 
-Dir.entries('assets/sass/').each do |source|
-	next if File.directory?(File.join('/your_dir', source)) || source.start_with?('_')
-	next unless source.end_with?('.sass')
-	source = source.split('.sass').first
-
-	engine = Sass::Engine.new(File.read("assets/sass/#{source}.sass"), :syntax => :sass)
-	File.open("assets/stylesheets/#{source}.css", 'w') do |file|
-  	file.write(engine.render)
-	end
-end
-
+SassCompiler.new.compile
 CVMaker.new('fr').write('index.html')
 CVMaker.new('fr').write('index_fr.html')
