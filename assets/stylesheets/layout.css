@@ -375,9 +375,6 @@ footer {
     padding-right: 5px;
     content: "\e607"; }
   #experience a.where {
-    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
-    -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
-    box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     display: inline-block;
     text-align: center;
     min-width: 105px;
