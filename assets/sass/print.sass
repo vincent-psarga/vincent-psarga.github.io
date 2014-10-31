@@ -1,0 +1,38 @@
+@import 'assets/sass/boxes'
+$font-size: 10pt
+
+body
+	font-size: $font-size
+	background: #fff
+
+nav, footer
+	display: none
+
+header
+	& img.avatar
+		display: none
+
+	& #contacts
+		& li
+			display: block
+			& a
+				font-size: $font-size
+				width: auto
+				height: auto
+
+#resume
+	display: none
+
+#experience
+	& .dates
+		display: inline
+		&:after
+			content: " - "
+
+	& .where
+		display: inline
+		background: none
+		background-image: none !important
+		padding: $small
+		float: none
+		box-shadow: none

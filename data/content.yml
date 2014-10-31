@@ -9,19 +9,19 @@ about:
   contacts:
     -
       type: mail
-      title: "e-mail"
+      title: "vincent.pretre[at]gmail.com"
       value: "mailto://vincent.pretre[at]gmail.com"
     -
       type: github
-      title: "GitHub"
+      title: "GitHub: vincent-psarga"
       value: "https://github.com/vincent-psarga/"
     -
       type: linkedin
-      title: "LinkedIn"
+      title: "LinkedIn: vincentpretre"
       value: "https://www.linkedin.com/in/vincentpretre"
     -
       type: skype
-      title: "Skype"
+      title: "Skype: vincentpretre"
       value: "skype:vincentpretre?call"
 
 resume:

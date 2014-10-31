@@ -1,147 +1,8 @@
-$titles-font: 'Oswald', sans-serif
-$content-font: 'Fjord One', serif
-
-$small: 5px
-$medium: 10px
-$large: 20px
-$xlarge: 30px
-$xxlarge: 45px
-
-$background: #efefef
-
-$main-color: #3680A4 /* #932F6C */
-$main-xlightened: lighten($main-color, 20%)
-$main-lightened: lighten($main-color, 10%)
-$main-darkened: darken($main-color, 10%)
-
-$secondary-color: #ff714b
-
-=shadowed
-    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35)
-    -moz-box-shadow:    3px 3px 2px 0px rgba(50, 50, 50, 0.35)
-    box-shadow:         3px 3px 2px 0px rgba(50, 50, 50, 0.35)
-
-=box-title
-    color: $main-color
-
-    padding: $small
-    margin-top: 0
-    margin-right: -$small
-    margin-bottom: $small
-    margin-left: -$small
-
-=box
-    margin-bottom: $xlarge
-    padding: $small
-
-    & h1, h2
-        +box-title
-
-    & h3
-        color: $main-lightened
-
-=left-box
-    +box
-    width: 30%
-    float: left
-    margin-left: 5%
-
-=right-box
-    +box
-    width: 55%
-    float: right
-    margin-right: 5%
-
-=wide-box($position)
-    display: block
-    width: 100%
-
-    background: $main-xlightened
-    padding: $small 0px
-
-    border-top: 1px solid $main-darkened
-    border-bottom: 1px solid $main-darkened
-
-    & a
-        color: $main-darkened
-        &:hover
-            color: #fff
-
-=white-box
-    background: #fff
-    +shadowed
-
-
-=inline-list
-    list-style-type: none
-    display: inline-block
-    margin-right: $small
-
-=iconed($content)
-    &:before
-        font-family: 'icomoon'
-        speak: none
-        font-style: normal
-        font-weight: normal
-        font-variant: normal
-        text-transform: none
-        line-height: 1
-        -webkit-font-smoothing: antialiased
-        -moz-osx-font-smoothing: grayscale
-        padding-right: $small
-        content: $content
-
-=icon-office
-    +iconed("\e607")
-
-=icon-quill
-    +iconed("\e608")
-
-=icon-pen
-    +iconed("\e609")
-
-=icon-pacman
-    +iconed("\e60a")
-
-=icon-library
-    +iconed("\e60b")
-
-=icon-phone
-    +iconed("\e60c")
-
-=icon-location
-    +iconed("\e600")
-
-=icon-calendar
-    +iconed("\e60d")
-
-=icon-mail
-    +iconed("\e601")
-
-=icon-googleplus
-    +iconed("\e602")
-
-=icon-twitter
-    +iconed("\e603")
-
-=icon-github
-    +iconed("\e604")
-
-=icon-skype
-    +iconed("\e606")
-
-=icon-linkedin
-    +iconed("\e605")
-
-=icon-hammer
-    +iconed("\e60e")
-
-=icon-tag
-    +iconed("\e60f")
+@import 'assets/sass/_icons'
+@import 'assets/sass/_boxes'
 
 .location
     +icon-location
-
 
 /* Layout */
 *
@@ -170,6 +31,7 @@ article
 
     & p
         margin-bottom: $medium
+        text-align: justify
 
     & ul
         margin-left: $medium
@@ -288,7 +150,7 @@ footer
     & h2
         +icon-office
 
-    & span.dates
+    & .dates
         +icon-calendar
         color: $main-darkened
         display: block
@@ -296,7 +158,7 @@ footer
         margin-bottom: $medium
 
 
-    & a.where
+    & .where
         +white-box
         display: inline-block
         text-align: center

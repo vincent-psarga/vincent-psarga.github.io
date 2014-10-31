@@ -1,0 +1,64 @@
+@import 'assets/sass/_colors'
+@import 'assets/sass/_fonts'
+@import 'assets/sass/_sizes'
+
+=shadowed
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35)
+    -moz-box-shadow:    3px 3px 2px 0px rgba(50, 50, 50, 0.35)
+    box-shadow:         3px 3px 2px 0px rgba(50, 50, 50, 0.35)
+
+=box-title
+    color: $main-color
+
+    padding: $small
+    margin-top: 0
+    margin-right: -$small
+    margin-bottom: $small
+    margin-left: -$small
+
+=box
+    margin-bottom: $xlarge
+    padding: $small
+
+    & h1, h2
+        +box-title
+
+    & h3
+        color: $main-lightened
+
+=left-box
+    +box
+    width: 30%
+    float: left
+    margin-left: 5%
+
+=right-box
+    +box
+    width: 55%
+    float: right
+    margin-right: 5%
+
+=wide-box($position)
+    display: block
+    width: 100%
+
+    background: $main-xlightened
+    padding: $small 0px
+
+    border-top: 1px solid $main-darkened
+    border-bottom: 1px solid $main-darkened
+
+    & a
+        color: $main-darkened
+        &:hover
+            color: #fff
+
+=white-box
+    background: #fff
+    +shadowed
+
+
+=inline-list
+    list-style-type: none
+    display: inline-block
+    margin-right: $small

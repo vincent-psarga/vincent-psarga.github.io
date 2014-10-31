@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?-cyoqrx");
+  src: url("../fonts/icomoon.eot?#iefix-cyoqrx") format("embedded-opentype"), url("../fonts/icomoon.woff?-cyoqrx") format("woff"), url("../fonts/icomoon.ttf?-cyoqrx") format("truetype"), url("../fonts/icomoon.svg?-cyoqrx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-size: 10pt;
+  background: white; }
+
+nav, footer {
+  display: none; }
+
+header img.avatar {
+  display: none; }
+header #contacts li {
+  display: block; }
+  header #contacts li a {
+    font-size: 10pt;
+    width: auto;
+    height: auto; }
+
+#resume {
+  display: none; }
+
+#experience .dates {
+  display: inline; }
+  #experience .dates:after {
+    content: " - "; }
+#experience .where {
+  display: inline;
+  background: none;
+  background-image: none !important;
+  padding: 5px;
+  float: none;
+  box-shadow: none; }

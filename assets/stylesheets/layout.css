@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?-cyoqrx");
+  src: url("../fonts/icomoon.eot?#iefix-cyoqrx") format("embedded-opentype"), url("../fonts/icomoon.woff?-cyoqrx") format("woff"), url("../fonts/icomoon.ttf?-cyoqrx") format("truetype"), url("../fonts/icomoon.svg?-cyoqrx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?-cyoqrx");
+  src: url("../fonts/icomoon.eot?#iefix-cyoqrx") format("embedded-opentype"), url("../fonts/icomoon.woff?-cyoqrx") format("woff"), url("../fonts/icomoon.ttf?-cyoqrx") format("truetype"), url("../fonts/icomoon.svg?-cyoqrx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .location:before {
   font-family: "icomoon";
   speak: none;
@@ -34,7 +48,8 @@ a {
 article {
   margin-bottom: 20px; }
   article p {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-align: justify; }
   article ul {
     margin-left: 10px;
     margin-bottom: 10px; }
@@ -377,12 +392,12 @@ footer {
     -moz-osx-font-smoothing: grayscale;
     padding-right: 5px;
     content: "\e607"; }
-  #experience span.dates {
+  #experience .dates {
     color: #29627e;
     display: block;
     margin-top: 5px;
     margin-bottom: 10px; }
-    #experience span.dates:before {
+    #experience .dates:before {
       font-family: "icomoon";
       speak: none;
       font-style: normal;
@@ -394,7 +409,7 @@ footer {
       -moz-osx-font-smoothing: grayscale;
       padding-right: 5px;
       content: "\e60d"; }
-  #experience a.where {
+  #experience .where {
     background: white;
     -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
@@ -407,13 +422,13 @@ footer {
     padding: 5px;
     padding-top: 30px;
     margin: 10px; }
-    #experience a.where.where-smartesting {
+    #experience .where.where-smartesting {
       background-image: url("../images/logos/smartesting.png"); }
-    #experience a.where.where-zest {
+    #experience .where.where-zest {
       background-image: url("../images/logos/zest.png"); }
-    #experience a.where.where-bleu-vert {
+    #experience .where.where-bleu-vert {
       background-image: url("../images/logos/bleu-vert.png"); }
-    #experience a.where.where-lifc {
+    #experience .where.where-lifc {
       background-image: url("../images/logos/lifc.png"); }
   #experience .keywords {
     clear: both;
