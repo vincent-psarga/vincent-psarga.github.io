@@ -4,7 +4,8 @@ about:
 
 resume:
   title: "A propos"
-  body: ""
+  body: |
+    Je suis un développeur web touche à tout: frontend, backend et diverses tâches liés à l'administration.  
 
 skills:
   title: "Compétences"
@@ -14,23 +15,39 @@ experience:
   data:
     5:
       title: "Développeur web (Rails, Ember.js)"
-      body: ""
+      body: |
+        En tant que membre de l'équipe R&D Smartesting, j'ai été amené à travailler durant 1 an et demi sur le site [Zest testing](http://www.zest-testing.com), une application collaborative facilitant l'écriture de scénarios de tests.  
+        Ma participation s'est portée sur tous les aspects du site: frontend (Ember.js), backend (Ruby on Rails) et administration (Elastic search, Puppet).
+        
+        Je suis le principal développeur de [zest-publisher](https://github.com/Smartesting/zest-publisher), l'outil permettant d'exporter les scénarios décrits dans Zest en tant que tests exécutables.
+         
+        J'ai aussi été le principal développeur de certaines fonctionnalités de l'application:
+        
+         - exécution de tâches de fond
+         - éditeur de scénarios / actionwords
+         - éditeur de table de données
+         - refactoring de tests (renommage, extraction et _inlining_ d'actionwords)
+         - création et mise en place de [_zest-publisher as a service_](https://zest-publisher.smartesting.com/) afin de permettre l'usage de l'outil en ligne
+         - recherche avancée basée sur _elastic search_
+        
+        J'ai aussi activement participé à la mise à disposition de code sous licence open-source (zest-publisher, [Ember easy datatable](https://github.com/Smartesting/ember-easy-datatable.js), [Scalability test](https://github.com/Smartesting/scalability_test))
+
     4:
       title: "Développeur web (Plone, Django)"
       body: |
         J’ai été durant plus d’un an responsable et principal développeur du site [Prettig Personeel](http://www.prettigpersoneel.nl), un logiciel de gestion de personnel en ligne.  
         Mon rôle consistait à développer de nouvelles fonctionnalités, refactoriser le code et gérer les releases ainsi que le déploiement sur les sites de test et de production.
         
-        J’ai aussi été responsable du développement du site [Oldtimers Verzeken](http://www.oldtimers-verzekeren.nl) qui est un site de vente d’assurance pour les véhicules anciens.  
-        A cette occasion, j’ai créé ZestMicroCMS, un système de gestion de contenu basé sur la plateforme Django dédié aux sites pour lesquels Plone est surdimensionné.  
+        J’ai aussi été responsable du développement du site [Oldtimers Verzeken](http://www.oldtimers-verzekeren.nl) qui est un site de vente d’assurance pour les véhicules anciens. A cette occasion, j’ai créé ZestMicroCMS, un système de gestion de contenu basé sur la plateforme Django dédié aux sites pour lesquels Plone est surdimensionné.
+        
         J’ai aussi participé à un certain nombre d’autres sites développés sous Plone. Pour [Lilly Medical](http://www.lillymedical.com) j’ai été chargé de la compatibilité iPad et diverses autres tâches impliquant Javascript.  
         Pour [Minaraad](http://www.minaraad.be) (site permettant de gérer les projets inter-commissions du gouvernement Belge) j’ai créé le système de gestion de projets.  
         J’ai aussi travaillé sur le projet Vagabonds (site permettant de recenser les infirmières libérales aux États-Unis, le site n’est pas encore en ligne). J’y ai intégré le système permettant aux utilisateurs de remplir leur profil.
         
-        Il arrive aussi que des clients nous contactent afin de mettre à jour des sites existants. J’ai ainsi été amené à travailler pour [VJ Movement](http://www.vjmovement.com) (un journal en ligne) afin d’intégrer le nouveau thème, corriger certains bugs et intégrer les comics interactifs dans le site dédié aux illustrations [Cartoon Movement](http://www.cartoonmovement.com).  
+        Il arrive aussi que des clients contactent Zest software afin de mettre à jour des sites existants. J’ai ainsi été amené à travailler pour [VJ Movement](http://www.vjmovement.com) (un journal en ligne) afin d’intégrer le nouveau thème, corriger certains bugs et intégrer les comics interactifs dans le site dédié aux illustrations [Cartoon Movement](http://www.cartoonmovement.com).  
         J’ai aussi procedé à la mise à jour du site [Den Haag Ontmoetding](http://www.denhaagontmoetdenhaag.nl) (site permettant de gèrer les projets inter-écoles de la Haye) afin de corriger un certain nombre de problèmes.  
         J’ai créé la troisième version de [Franel](http://www.franel.eu) (une plateforme d’apprentissage du Néerlandais et du Français). Ce site repose sur un service web contenant l’ensemble des données du systèmes (utilisateurs, leçons, résultats) et une base de données MySQL afin de cacher les données et éviter les appels rop fréquents au service web.  
-        J’ai été chargé des mises à jour de ces quatre derniers sites puisque je suis généralement responsable des projets développés sous Django. Je suis aussi chargé des tâches liées à Javascript.
+        J’ai été chargé des mises à jour de ces quatre derniers sites puisque j'étais généralement responsable des projets développés sous Django. J'étais aussi chargé des tâches liées à Javascript.
     3:
       title: "Doctorat d’informatique (Validation des services web à l’aide de la génération automatique de tests)"
       body: |
@@ -49,7 +66,7 @@ experience:
       title: "Développeur web (PHP)"
       body: |
         Lors de mon stage chez Bleu-Vert, j’ai travaillé sur deux sites:
-
+        
          * [Tschau](http://www.tschau.ch): correction des bugs et ajout de nouvelles fonctionnalités;
          * [Guide Social](http://www.guidesocial.ch): création de l’interface d’administration.
         
