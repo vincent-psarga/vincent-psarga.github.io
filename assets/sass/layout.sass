@@ -1,5 +1,5 @@
 @import 'assets/sass/_icons'
-@import 'assets/sass/_boxes'
+@import 'assets/sass/_components'
 
 .location
     +icon-location
@@ -44,7 +44,7 @@ article
             margin-left: $medium
 
 header
-    +left-box
+    +left-box(false)
     & .avatar
         +white-box
         float: left
@@ -53,13 +53,11 @@ header
 
     & #contacts
         & li
-            +inline-list
+            list-style-type: none
+            @media (min-width: $break-one-column)
+                +inline-list
             & a
-                display: inline-block
-                font-size: $large
-                width: $large
-                height: $large
-                overflow: hidden
+                +icon-only($large)
 
                 &.mail
                     +icon-mail
@@ -89,15 +87,12 @@ header
         margin-bottom: $medium
 
 #education
-    +left-box
+    +left-box(true)
     & h2
         +icon-library
 
-    font-size: 80%
-
 #skills
-    +left-box
-    font-size: 80%
+    +left-box(true)
 
     & h2
         +icon-hammer
@@ -126,12 +121,16 @@ nav
     & a
         &.link-to-resume
             +icon-quill
+
         &.link-to-experience
             +icon-office
+
         &.link-to-education
             +icon-library
+
         &.link-to-skills
             +icon-hammer
+
         &.link-to-hobbies
             +icon-pacman
 
@@ -156,36 +155,35 @@ footer
     & .dates
         +icon-calendar
         color: $main-darkened
-        display: block
+
+        display: inline-block
         margin-top: $small
         margin-bottom: $medium
 
+        @media (max-width: $break-one-column)
+            &:after
+                content: " - "
+
 
     & .where
-        +white-box
-        display: inline-block
-        text-align: center
-        font-size: 80%
+        @media (min-width: $break-one-column)
+            +white-box
 
-        background-repeat: no-repeat
-        background-position: center 10px
+            float: right
+            text-align: center
+            font-size: $smaller-font
 
-        float: right
-        padding: $small
-        padding-top: 20 + 2 * $small
-        margin: $medium
+            &.where-smartesting
+                +logo-background($small, 'smartesting')
 
-        &.where-smartesting
-            background-image: url('../images/logos/smartesting.png')
+            &.where-zest
+                +logo-background($small, 'zest')
 
-        &.where-zest
-            background-image: url('../images/logos/zest.png')
+            &.where-bleu-vert
+                +logo-background($small, 'bleu-vert')
 
-        &.where-bleu-vert
-            background-image: url('../images/logos/bleu-vert.png')
-        
-        &.where-lifc
-            background-image: url('../images/logos/lifc.png')
+            &.where-lifc
+                +logo-background($small, 'lifc')
 
     & .keywords
         clear: both
@@ -194,17 +192,7 @@ footer
 
         & li
             +inline-list
-
-            font-size: 80%
-            border: 1px solid $main-color
-            background: lighten($main-color, 50%)
-            padding: $small
-            margin-bottom: $small
-            margin-left: 0
-            -webkit-border-radius: $small
-            -moz-border-radius: $small
-            border-radius: $small
-
+            +button
 
 #hobbies
     +right-box

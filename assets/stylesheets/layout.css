@@ -69,18 +69,22 @@ header {
     margin-right: -5px;
     margin-bottom: 5px;
     margin-left: -5px; }
+    @media (max-width: 60em) {
+      header h1, header h2 {
+        border-bottom: 1px solid #3680a4; } }
   header h3 {
     color: #4a9cc3; }
-  @media (max-width: 40em) {
+  @media (max-width: 60em) {
     header {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     header {
+      float: left;
       margin-left: 5%;
-      width: 30%;
-      float: left; } }
+      width: 30%; } }
   header .avatar {
+    display: inline-block;
     background: white;
     -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
     -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
@@ -89,87 +93,91 @@ header {
     margin: 5px;
     margin-right: 10px; }
   header #contacts li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 5px; }
-    header #contacts li a {
-      display: inline-block;
-      font-size: 20px;
-      width: 20px;
-      height: 20px;
-      overflow: hidden; }
-      header #contacts li a.mail:before {
-        font-family: "icomoon";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        padding-right: 5px;
-        content: "\e601"; }
-      header #contacts li a.googleplus:before {
-        font-family: "icomoon";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        padding-right: 5px;
-        content: "\e602"; }
-      header #contacts li a.twitter:before {
-        font-family: "icomoon";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        padding-right: 5px;
-        content: "\e603"; }
-      header #contacts li a.github:before {
-        font-family: "icomoon";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        padding-right: 5px;
-        content: "\e604"; }
-      header #contacts li a.skype:before {
-        font-family: "icomoon";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        padding-right: 5px;
-        content: "\e606"; }
-      header #contacts li a.linkedin:before {
-        font-family: "icomoon";
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        padding-right: 5px;
-        content: "\e605"; }
+    list-style-type: none; }
+    @media (min-width: 60em) {
+      header #contacts li {
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 5px; } }
+    @media (min-width: 60em) {
+      header #contacts li a {
+        display: inline-block;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        overflow: hidden; } }
+    header #contacts li a.mail:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e601"; }
+    header #contacts li a.googleplus:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e602"; }
+    header #contacts li a.twitter:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e603"; }
+    header #contacts li a.github:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e604"; }
+    header #contacts li a.skype:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e606"; }
+    header #contacts li a.linkedin:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e605"; }
   header #address {
     clear: both;
     position: relative;
@@ -197,8 +205,7 @@ header {
 
 #education {
   margin-bottom: 30px;
-  padding: 5px;
-  font-size: 80%; }
+  padding: 5px; }
   #education h1, #education h2 {
     color: #3680a4;
     padding: 5px;
@@ -206,17 +213,21 @@ header {
     margin-right: -5px;
     margin-bottom: 5px;
     margin-left: -5px; }
+    @media (max-width: 60em) {
+      #education h1, #education h2 {
+        border-bottom: 1px solid #3680a4; } }
   #education h3 {
     color: #4a9cc3; }
-  @media (max-width: 40em) {
+  @media (max-width: 60em) {
     #education {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     #education {
+      float: left;
       margin-left: 5%;
       width: 30%;
-      float: left; } }
+      font-size: 80%; } }
   #education h2:before {
     font-family: "icomoon";
     speak: none;
@@ -232,8 +243,7 @@ header {
 
 #skills {
   margin-bottom: 30px;
-  padding: 5px;
-  font-size: 80%; }
+  padding: 5px; }
   #skills h1, #skills h2 {
     color: #3680a4;
     padding: 5px;
@@ -241,17 +251,21 @@ header {
     margin-right: -5px;
     margin-bottom: 5px;
     margin-left: -5px; }
+    @media (max-width: 60em) {
+      #skills h1, #skills h2 {
+        border-bottom: 1px solid #3680a4; } }
   #skills h3 {
     color: #4a9cc3; }
-  @media (max-width: 40em) {
+  @media (max-width: 60em) {
     #skills {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     #skills {
+      float: left;
       margin-left: 5%;
       width: 30%;
-      float: left; } }
+      font-size: 80%; } }
   #skills h2:before {
     font-family: "icomoon";
     speak: none;
@@ -368,17 +382,20 @@ footer {
     margin-right: -5px;
     margin-bottom: 5px;
     margin-left: -5px; }
+    @media (max-width: 60em) {
+      #resume h1, #resume h2 {
+        border-bottom: 1px solid #3680a4; } }
   #resume h3 {
     color: #4a9cc3; }
-  @media (max-width: 40em) {
+  @media (max-width: 60em) {
     #resume {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     #resume {
+      float: right;
       margin-right: 5%;
-      width: 55%;
-      float: right; } }
+      width: 55%; } }
   #resume h2:before {
     font-family: "icomoon";
     speak: none;
@@ -402,17 +419,20 @@ footer {
     margin-right: -5px;
     margin-bottom: 5px;
     margin-left: -5px; }
+    @media (max-width: 60em) {
+      #experience h1, #experience h2 {
+        border-bottom: 1px solid #3680a4; } }
   #experience h3 {
     color: #4a9cc3; }
-  @media (max-width: 40em) {
+  @media (max-width: 60em) {
     #experience {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     #experience {
+      float: right;
       margin-right: 5%;
-      width: 55%;
-      float: right; } }
+      width: 55%; } }
   #experience h2:before {
     font-family: "icomoon";
     speak: none;
@@ -427,7 +447,7 @@ footer {
     content: "\e607"; }
   #experience .dates {
     color: #29627e;
-    display: block;
+    display: inline-block;
     margin-top: 5px;
     margin-bottom: 10px; }
     #experience .dates:before {
@@ -442,28 +462,47 @@ footer {
       -moz-osx-font-smoothing: grayscale;
       padding-right: 5px;
       content: "\e60d"; }
-  #experience .where {
-    background: white;
-    -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
-    -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
-    box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
-    display: inline-block;
-    text-align: center;
-    font-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center 10px;
-    float: right;
-    padding: 5px;
-    padding-top: 30px;
-    margin: 10px; }
-    #experience .where.where-smartesting {
-      background-image: url("../images/logos/smartesting.png"); }
-    #experience .where.where-zest {
-      background-image: url("../images/logos/zest.png"); }
-    #experience .where.where-bleu-vert {
-      background-image: url("../images/logos/bleu-vert.png"); }
-    #experience .where.where-lifc {
-      background-image: url("../images/logos/lifc.png"); }
+    @media (max-width: 60em) {
+      #experience .dates:after {
+        content: " - "; } }
+  @media (min-width: 60em) {
+    #experience .where {
+      display: inline-block;
+      background: white;
+      -webkit-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+      -moz-box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+      box-shadow: 3px 3px 2px 0px rgba(50, 50, 50, 0.35);
+      float: right;
+      text-align: center;
+      font-size: 80%; }
+      #experience .where.where-smartesting {
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        padding: 5px;
+        padding-top: 30px;
+        margin: 10px;
+        background-image: url("../images/logos/smartesting.png"); }
+      #experience .where.where-zest {
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        padding: 5px;
+        padding-top: 30px;
+        margin: 10px;
+        background-image: url("../images/logos/zest.png"); }
+      #experience .where.where-bleu-vert {
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        padding: 5px;
+        padding-top: 30px;
+        margin: 10px;
+        background-image: url("../images/logos/bleu-vert.png"); }
+      #experience .where.where-lifc {
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        padding: 5px;
+        padding-top: 30px;
+        margin: 10px;
+        background-image: url("../images/logos/lifc.png"); } }
   #experience .keywords {
     clear: both;
     color: #29627e; }
@@ -503,17 +542,20 @@ footer {
     margin-right: -5px;
     margin-bottom: 5px;
     margin-left: -5px; }
+    @media (max-width: 60em) {
+      #hobbies h1, #hobbies h2 {
+        border-bottom: 1px solid #3680a4; } }
   #hobbies h3 {
     color: #4a9cc3; }
-  @media (max-width: 40em) {
+  @media (max-width: 60em) {
     #hobbies {
       margin-left: 20px;
       margin-right: 20px; } }
-  @media (min-width: 40em) {
+  @media (min-width: 60em) {
     #hobbies {
+      float: right;
       margin-right: 5%;
-      width: 55%;
-      float: right; } }
+      width: 55%; } }
   #hobbies h2:before {
     font-family: "icomoon";
     speak: none;
