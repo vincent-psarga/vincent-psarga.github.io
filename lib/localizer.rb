@@ -52,7 +52,7 @@ class Localizer
 
       if item.is_a?(String)
         key = path.pop
-        get_item(@context, path)[key] = @i18n['keywords'][item] || item
+        get_item(@context, path)[key] = get_item(@i18n, ['keywords', item]) || item
       end
     end
   end

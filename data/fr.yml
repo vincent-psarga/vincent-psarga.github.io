@@ -46,7 +46,7 @@ experience:
         
         Il arrive aussi que des clients contactent Zest software afin de mettre à jour des sites existants. J’ai ainsi été amené à travailler pour [VJ Movement](http://www.vjmovement.com) (un journal en ligne) afin d’intégrer le nouveau thème, corriger certains bugs et intégrer les comics interactifs dans le site dédié aux illustrations [Cartoon Movement](http://www.cartoonmovement.com).  
         J’ai aussi procedé à la mise à jour du site [Den Haag Ontmoetding](http://www.denhaagontmoetdenhaag.nl) (site permettant de gèrer les projets inter-écoles de la Haye) afin de corriger un certain nombre de problèmes.  
-        J’ai créé la troisième version de [Franel](http://www.franel.eu) (une plateforme d’apprentissage du Néerlandais et du Français). Ce site repose sur un service web contenant l’ensemble des données du systèmes (utilisateurs, leçons, résultats) et une base de données MySQL afin de cacher les données et éviter les appels rop fréquents au service web.  
+        J’ai créé la troisième version de [Franel](http://www.franel.eu) (une plateforme d’apprentissage du Néerlandais et du Français). Ce site repose sur un service web contenant l’ensemble des données du systèmes (utilisateurs, leçons, résultats) et une base de données MySQL afin de cacher les données et éviter les appels trop fréquents au service web.  
         J’ai été chargé des mises à jour de ces quatre derniers sites puisque j'étais généralement responsable des projets développés sous Django. J'étais aussi chargé des tâches liées à Javascript.
     3:
       title: "Doctorat d’informatique (Validation des services web à l’aide de la génération automatique de tests)"

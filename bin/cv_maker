@@ -3,5 +3,5 @@ require './lib/sass_compiler.rb'
 require './lib/cv_maker.rb'
 
 SassCompiler.new.compile
-CVMaker.new('fr').write('index.html')
+CVMaker.new().write('index.html')
 CVMaker.new('fr').write('index_fr.html')

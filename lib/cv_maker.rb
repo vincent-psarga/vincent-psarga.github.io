@@ -5,12 +5,12 @@ require 'handlebars'
 require './lib/localizer'
 
 class CVMaker
-  def initialize(lang)
+  def initialize(lang = nil)
     @handlebars = Handlebars::Context.new
     register_hb_helpers
 
     @context = load_yaml('content')
-    @localizer = Localizer.new(@context, load_yaml(lang))
+    @localizer = Localizer.new(@context, lang.nil? ? {} : load_yaml(lang))
   end
 
   def register_hb_helpers

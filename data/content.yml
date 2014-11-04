@@ -1,6 +1,7 @@
 --- 
 about:
   name: "Vincent Prêtre"
+  title: "Web developer"
   avatar: http://0.gravatar.com/avatar/a8d7a6a8449afeeeaf9583c80c9ce8fc
   address: |
     21 place Gustave Courbet  
@@ -25,9 +26,12 @@ about:
       value: "skype:vincentpretre?call"
 
 resume:
-  empty: 1
+  title: "About"
+  body: |
+    I'm a versatile web developper who likes to play with all parts of a web site: frontend, backend and sysadmin tasks. 
 
 skills:
+  title: Skills
   data:
     -
       title: Langs
@@ -62,6 +66,23 @@ skills:
 experience:
   data:
     5:
+      title: "Web developer (Rails, Ember.js)"
+      body: |
+        As a member of the R&D team at Smartesting, I worked during one and a half year on [Zest testing](http://www.zest-testing.com), a collaborative web application for tests scenarios writing.
+        I worked on every parts of the application: frontend with Ember.js, backend with Ruby on Rails and sysadmin tasks with Puppet.
+        
+        I have been the main developer of [zest-publisher](https://github.com/Smartesting/zest-publisher), the tool converting tests scenarios from Zest to executable tests.
+        
+        I was also the main developer of some features in the application:
+        
+         - background tasks running
+         - scenario and actionword editor
+         - scenario datatable editor
+         - refactoring (renaming, extracting and inlining actionwords)
+         - creating and setting up [_zest-publisher as a service_](https://zest-publisher.smartesting.com/), a web application to ease usage of Zest publisher
+         - advanced search based on Elastic search
+        
+        I also activelly pushed open sourcing of code produced at Smartesting (zest-publisher, [Ember easy datatable](https://github.com/Smartesting/ember-easy-datatable.js), [Scalability test](https://github.com/Smartesting/scalability_test))
       where-uid: "smartesting"
       dates: "2012 - 2014"
       keywords:
@@ -75,6 +96,21 @@ experience:
         - continuous-integration
         - continuous-deployement
     4:
+      title: "Web developer(Plone, Django)"
+      body: |
+        For more than one year, I have been product manager and main developer of [Prettig Personeel](http://www.prettigpersoneel.nl), an online HR management tool.
+        My role was to develop new feature, refactor existing code and handling releasing and deployment of the tool.
+        
+        I was also responsible of the development of [Oldtimers Verzeken](http://www.oldtimers-verzekeren.nl), a website for old vehicle insurances. At this occasion, I created Zest MicroCMS, a Django based CMS dedicated for website for which Plone is oversized.
+        
+        I also worked on various other websites based on Plone CMS. On [Lilly Medical](http://www.lillymedical.com), I worked on iPad compatibility and various other Javascript tasks.
+        For [Minaraad](http://www.minaraad.be) (a website for handling inter commissions projects for the belgian governement), I created the projects management system.
+        
+        Zest was sometimes contacted by customers for updating existing websites. I worked for [VJ Movement](http://www.vjmovement.com) for bugfixes, integrating the new theme and integrate the interactive comics on the comic dedicated website [Cartoon Movement](http://www.cartoonmovement.com).
+        I also worked don the update of the website [Den Haag Ontmoetding](http://www.denhaagontmoetdenhaag.nl) (a website to manage inter-school projects in The Hague region) and various bugfixes.
+        I created the third version of the [Franel](http://www.franel.eu) website (a European project for Dutch and French learning). This site relies on a web service containing all data (users, lessons, results...) and a local MySQL database for cahing data and avoid overload of the web service.
+        I was assigned to those site as I was generally responsible for the development of Django powered websites at Zest. I was also assigned to Javascript related tasks.
+
       where-uid: "zest"
       dates: "2009 - 2012"
       keywords:
@@ -86,6 +122,23 @@ experience:
         - jQuery
         - open-source
     3:
+      title: "Compuer science Ph. D (Web service validation using model based tests generation)"
+      body: |
+        The goal of my Ph. D was to use model based testing with web services. My researches led to the creation of iTaC-QoS, a fully automatic validation framework based on UDDI (a yellow pages system for web services) and UML.  
+        
+        I produced several tools and methods during this Ph. D:
+          - validation process used in iTaC-QoS.
+          - automated creation of UML skeleton from WSDL specifications.
+          - guidelines for efficient UML modeling of web services.
+          - automated discovery of dependencies between web services operations.
+          - automated translation of abstract tests into executable tests.
+          - automated generation of code for test’s verdict computing from OCL specifications. This code determines if a bug is critical when a test fails.
+          - distributed test bench handling the correct ordering of tests execution.
+        
+        Four articles about my researches have been published in international conferences and workshops. One of them has been published as an extended version in an internatiobal journal.
+        
+        As a Ph.D student, I also assumed teaching responsabilities and student projects managment.
+
       where-uid: "lifc"
       dates: "2005 - 2009"
       keywords:
@@ -96,6 +149,12 @@ experience:
         - UML
         - Test Designer
     2:
+      title: "Master student (Multi-agents and components for video transmission)"
+      body: |
+        During my master, I studied the impact of multi-agent and components paradigms for video transmission.
+        
+        My researchs conducted to the creation of a video transmission framework able to adapt video on the fly to handle network congestion, load balancing and habilities of the receiver. 
+
       where-uid: "lifc"
       dates: "2005"
       keywords:
@@ -103,6 +162,14 @@ experience:
        - multi-agents
        - components
     1:
+      body: |
+        At Bleu-Vert, I worked on two web sites:
+        
+        - [Tschau](http://www.tschau.ch): bugs correction and new functionalities development.
+        - [Guide Social](http://www.guidesocial.ch): administration interface development.
+        
+        I developed those sites with PHP and MySQL. I used the Smarty template system to split code and design parts. I closely worked with a web designer who was creating design while I was focusing on business functionalities. 
+
       where-uid: "bleu-vert"
       dates: "2003"
       keywords:
@@ -111,16 +178,20 @@ experience:
       - Smarty
 
 education: 
+  title: Education
   data: 
     2:
+      title: "Computer science Ph. D"
       dates: 2005-2009
       where-uid: "ufc"
     1:
+      title: Computer science Master - distrbuted systems
       dates: 2004-2005
       where-uid: "ufc"
 
 hobbie:
-  empty: 1
+  title: Hobbies
+  body: ""
 
 places:
   ufc: 
