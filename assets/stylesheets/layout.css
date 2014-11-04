@@ -64,6 +64,7 @@ header {
   padding: 5px; }
   header h1, header h2 {
     color: #3680a4;
+    width: 100%;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -74,6 +75,8 @@ header {
         border-bottom: 1px solid #3680a4; } }
   header h3 {
     color: #4a9cc3; }
+  header article {
+    width: 100%; }
   @media (max-width: 60em) {
     header {
       margin-left: 20px;
@@ -208,6 +211,7 @@ header {
   padding: 5px; }
   #education h1, #education h2 {
     color: #3680a4;
+    width: 100%;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -218,6 +222,8 @@ header {
         border-bottom: 1px solid #3680a4; } }
   #education h3 {
     color: #4a9cc3; }
+  #education article {
+    width: 100%; }
   @media (max-width: 60em) {
     #education {
       margin-left: 20px;
@@ -246,6 +252,7 @@ header {
   padding: 5px; }
   #skills h1, #skills h2 {
     color: #3680a4;
+    width: 100%;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -256,6 +263,8 @@ header {
         border-bottom: 1px solid #3680a4; } }
   #skills h3 {
     color: #4a9cc3; }
+  #skills article {
+    width: 100%; }
   @media (max-width: 60em) {
     #skills {
       margin-left: 20px;
@@ -383,6 +392,7 @@ footer {
   padding: 5px; }
   #resume h1, #resume h2 {
     color: #3680a4;
+    width: 100%;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -393,6 +403,8 @@ footer {
         border-bottom: 1px solid #3680a4; } }
   #resume h3 {
     color: #4a9cc3; }
+  #resume article {
+    width: 100%; }
   @media (max-width: 60em) {
     #resume {
       margin-left: 20px;
@@ -420,6 +432,7 @@ footer {
   padding: 5px; }
   #experience h1, #experience h2 {
     color: #3680a4;
+    width: 100%;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -430,6 +443,8 @@ footer {
         border-bottom: 1px solid #3680a4; } }
   #experience h3 {
     color: #4a9cc3; }
+  #experience article {
+    width: 100%; }
   @media (max-width: 60em) {
     #experience {
       margin-left: 20px;
@@ -541,6 +556,7 @@ footer {
   padding: 5px; }
   #hobbies h1, #hobbies h2 {
     color: #3680a4;
+    width: 100%;
     padding: 5px;
     margin-top: 0;
     margin-right: -5px;
@@ -551,6 +567,8 @@ footer {
         border-bottom: 1px solid #3680a4; } }
   #hobbies h3 {
     color: #4a9cc3; }
+  #hobbies article {
+    width: 100%; }
   @media (max-width: 60em) {
     #hobbies {
       margin-left: 20px;

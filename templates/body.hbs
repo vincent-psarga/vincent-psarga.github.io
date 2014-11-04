@@ -61,7 +61,7 @@
 
 			<section id="experience">
 				<h2>{{ experience.title }}</h2>
-				{{#each experience.data}}
+				{{#each_values experience.data}}
 				<article>
 					<h3>{{ this.title}} </h3>
 					<span class="dates">{{ this.dates }}</span>
@@ -75,7 +75,7 @@
 						{{/each}}
 					</ul>
 				</article>
-				{{/each}}
+				{{/each_values}}
 			</section>
 
 			<section id="skills">
@@ -90,13 +90,13 @@
 
 			<section id="education">
 				<h2>{{ education.title }}</h2>
-				{{#each education.data}}
+				{{#each_values education.data}}
 				<article>
 					<h3>{{ this.title }}</h3>
 					<span class="dates">{{ this.dates }}</span>
 					<span class="where-{{this.where-uid}}">{{ this.where.name}} </span>
 				</article>
-				{{/each}}
+				{{/each_values}}
 			</section>
 
 			<section id="hobbies">
