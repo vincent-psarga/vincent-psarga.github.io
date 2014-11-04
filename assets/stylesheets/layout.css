@@ -302,8 +302,10 @@ nav ul.sections {
   display: none; }
 nav ul.langs {
   display: block;
-  float: right;
-  font-size: 60%; }
+  font-size: 60%;
+  position: absolute;
+  top: 5px;
+  right: 5px; }
   nav ul.langs li a {
     padding-left: 20px;
     background-repeat: no-repeat;
@@ -312,6 +314,9 @@ nav ul.langs {
     background-image: url("../images/flags/us.png"); }
   nav ul.langs .fr a {
     background-image: url("../images/flags/fr.png"); }
+  nav ul.langs .fr:after {
+    content: "-";
+    padding: 5px; }
 nav a.link-to-resume:before {
   font-family: "icomoon";
   speak: none;

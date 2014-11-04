@@ -114,8 +114,11 @@ nav
 
         &.langs
             display: block
-            float: right
             font-size: 60%
+
+            position: absolute
+            top: $small
+            right: $small
 
             & li a
                 padding-left: 20px
@@ -124,8 +127,12 @@ nav
 
             & .en a
                 background-image: url('../images/flags/us.png')
-            & .fr a
-                background-image: url('../images/flags/fr.png')
+            & .fr
+                & a
+                    background-image: url('../images/flags/fr.png')
+                &:after
+                    content: "-"
+                    padding: $small
 
     & a
         &.link-to-resume
