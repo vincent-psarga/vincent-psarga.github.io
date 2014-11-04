@@ -64,6 +64,7 @@ skills:
         - Puppet
 
 experience:
+  title: "Experience"
   data:
     5:
       title: "Web developer (Rails, Ember.js)"
@@ -191,7 +192,10 @@ education:
 
 hobbie:
   title: Hobbies
-  body: ""
+  body: |
+    I practice various outdoor activities such as hiking, climbing and skiing. I also practice Historical European Medieval Arts (mainly longsword, dagger and battle axe) and reenactment with the association Ad Honores.
+    
+    I also play the guitar and the ukulele.
 
 places:
   ufc: 

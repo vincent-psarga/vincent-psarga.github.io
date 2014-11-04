@@ -105,19 +105,28 @@ header
         margin-left: $medium
 
 nav
-    display: none
-    position: absolute
-    top: 0px
-
     & ul
         & li
             +inline-list
 
         &.sections
-            float: left
+            display: none
 
         &.langs
+            display: block
             float: right
+            font-size: 60%
+
+            & li a
+                padding-left: 20px
+                background-repeat: no-repeat
+                background-position: center left
+
+            & .en a
+                background-image: url('../images/flags/us.png')
+            & .fr a
+                background-image: url('../images/flags/fr.png')
+
     & a
         &.link-to-resume
             +icon-quill
