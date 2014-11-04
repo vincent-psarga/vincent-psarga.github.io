@@ -294,10 +294,6 @@ header {
   #skills dd {
     margin-left: 10px; }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 5px; }
 nav ul.sections {
   display: none; }
 nav ul.langs {
@@ -306,17 +302,21 @@ nav ul.langs {
   position: absolute;
   top: 5px;
   right: 5px; }
-  nav ul.langs li a {
-    padding-left: 20px;
-    background-repeat: no-repeat;
-    background-position: center left; }
-  nav ul.langs .en a {
-    background-image: url("../images/flags/us.png"); }
-  nav ul.langs .fr a {
-    background-image: url("../images/flags/fr.png"); }
-  nav ul.langs .fr:after {
-    content: "-";
-    padding: 5px; }
+  nav ul.langs li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px; }
+    nav ul.langs li a {
+      padding-left: 20px;
+      background-repeat: no-repeat;
+      background-position: center left; }
+    nav ul.langs li.en a {
+      background-image: url("../images/flags/us.png"); }
+    nav ul.langs li.fr a {
+      background-image: url("../images/flags/fr.png"); }
+    nav ul.langs li.fr:after {
+      content: "-";
+      padding: 5px; }
 nav a.link-to-resume:before {
   font-family: "icomoon";
   speak: none;

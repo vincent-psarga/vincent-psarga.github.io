@@ -106,9 +106,6 @@ header
 
 nav
     & ul
-        & li
-            +inline-list
-
         &.sections
             display: none
 
@@ -120,19 +117,23 @@ nav
             top: $small
             right: $small
 
-            & li a
-                padding-left: 20px
-                background-repeat: no-repeat
-                background-position: center left
+            & li
+                +inline-list
 
-            & .en a
-                background-image: url('../images/flags/us.png')
-            & .fr
                 & a
-                    background-image: url('../images/flags/fr.png')
-                &:after
-                    content: "-"
-                    padding: $small
+                    padding-left: 20px
+                    background-repeat: no-repeat
+                    background-position: center left
+
+                &.en a
+                    background-image: url('../images/flags/us.png')
+                &.fr
+
+                    & a
+                        background-image: url('../images/flags/fr.png')
+                    &:after
+                        content: "-"
+                        padding: $small
 
     & a
         &.link-to-resume
