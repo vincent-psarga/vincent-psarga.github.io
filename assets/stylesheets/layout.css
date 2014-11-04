@@ -33,7 +33,8 @@
 body {
   font-family: "Fjord One", serif;
   margin-top: 10px;
-  background: #efefef; }
+  background: #efefef;
+  width: 100%; }
 
 h1, h2, h3 {
   font-family: "Oswald", sans-serif; }
@@ -321,29 +322,56 @@ header {
   #skills dd {
     margin-left: 10px; }
 
-nav ul.sections {
-  display: none; }
-nav ul.langs {
-  display: block;
-  font-size: 60%;
-  position: absolute;
-  top: 5px;
-  right: 5px; }
-  nav ul.langs li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 5px; }
-    nav ul.langs li a {
-      padding-left: 20px;
-      background-repeat: no-repeat;
-      background-position: center left; }
-    nav ul.langs li.en a {
-      background-image: url("../images/flags/us.png"); }
-    nav ul.langs li.fr a {
-      background-image: url("../images/flags/fr.png"); }
+@media (min-width: 60em) {
+  nav ul.sections {
+    display: none; } }
+@media (max-width: 60em) {
+  nav ul.sections li a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font_size: 100%;
+    font-weight: bold;
+    background-color: #3680a4;
+    border-top: 1px solid #29627e;
+    border-bottom: 1px solid #29627e;
+    color: white; }
+    nav ul.sections li a:after {
+      content: " >"; } }
+nav ul.langs li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 5px; }
+  nav ul.langs li.en a {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: url("../images/flags/us.png"); }
+  nav ul.langs li.fr a {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: url("../images/flags/fr.png"); }
+@media (min-width: 60em) {
+  nav ul.langs {
+    display: block;
+    font-size: 60%;
+    position: absolute;
+    top: 5px;
+    right: 5px; }
     nav ul.langs li.fr:after {
       content: "-";
-      padding: 5px; }
+      padding: 5px; } }
+@media (max-width: 60em) {
+  nav ul.langs {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font_size: 100%;
+    font-weight: bold;
+    background-color: #4a9cc3; }
+    nav ul.langs a {
+      color: white; } }
 nav a.link-to-resume:before {
   font-family: "icomoon";
   speak: none;

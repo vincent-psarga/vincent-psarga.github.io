@@ -94,7 +94,7 @@ $break-one-column: 60em
     display: inline-block
     margin-right: $small
 
-=button
+=tag
     font-size: $smaller-font
     border: 1px solid $main-color
     background: lighten($main-color, 50%)
@@ -105,9 +105,33 @@ $break-one-column: 60em
     -moz-border-radius: $small
     border-radius: $small
 
+=button($size, $padding, $primary)
+    display: block
+    padding: $padding
+
+    text-align: center
+    font_size: $size
+    font-weight: bold
+
+
+    @if $primary
+        background-color: $main-color
+        border-top: 1px solid $main-darkened
+        border-bottom: 1px solid $main-darkened
+        color: #fff
+    @else
+        background-color: $main-lightened
+
+
 =logo-background($padding, $logo)
     background-repeat: no-repeat
     background-position: center $padding
     padding: $padding
     padding-top: 20 + 2 * $padding
     background-image: url('../images/logos/' + $logo + '.png')
+
+=flag($country)
+    padding-left: 20px
+    background-repeat: no-repeat
+    background-position: center left
+    background-image: url('../images/flags/' + $country + '.png')

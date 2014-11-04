@@ -14,6 +14,7 @@ body
     font-family: $content-font
     margin-top: $medium
     background: $background
+    width: 100%
 
 h1, h2, h3
     font-family: $titles-font
@@ -112,33 +113,39 @@ header
 nav
     & ul
         &.sections
-            display: none
+            @media (min-width: $break-one-column)
+                display: none
+            @media (max-width: $break-one-column)
+                & li a
+                    +button(100%, $small, true)
+                    &:after
+                        content: ' >'
 
         &.langs
-            display: block
-            font-size: 60%
-
-            position: absolute
-            top: $small
-            right: $small
-
             & li
                 +inline-list
-
-                & a
-                    padding-left: 20px
-                    background-repeat: no-repeat
-                    background-position: center left
-
                 &.en a
-                    background-image: url('../images/flags/us.png')
-                &.fr
+                    +flag('us')
+                &.fr a
+                    +flag('fr')
 
-                    & a
-                        background-image: url('../images/flags/fr.png')
-                    &:after
-                        content: "-"
-                        padding: $small
+            @media (min-width: $break-one-column)
+                display: block
+                font-size: 60%
+
+                position: absolute
+                top: $small
+                right: $small
+
+                & li.fr:after
+                    content: "-"
+                    padding: $small
+
+            @media (max-width: $break-one-column)
+                +button(100%, $small, false)
+                & a
+                    color: #fff
+
 
     & a
         &.link-to-resume
@@ -217,7 +224,7 @@ footer
 
         & li
             +inline-list
-            +button
+            +tag
 
 #hobbies
     +right-box
