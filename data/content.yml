@@ -129,7 +129,7 @@ experience:
         The goal of my Ph. D was to use model based testing with web services. My researches led to the creation of iTaC-QoS, a fully automatic validation framework based on UDDI (a yellow pages system for web services) and UML.  
         
         I produced several tools and methods during this Ph. D:
-        
+
           - validation process used in iTaC-QoS.
           - automated creation of UML skeleton from WSDL specifications.
           - guidelines for efficient UML modeling of web services.
@@ -230,3 +230,8 @@ places:
     link: "http://www.smartesting.com"
     location: "Besançon"
     country: "FR"
+
+misc:
+  lang_fr: Français
+  lang_en: English
+  back_to_top: "Back to top"

@@ -1,14 +1,14 @@
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?-cyoqrx");
-  src: url("../fonts/icomoon.eot?#iefix-cyoqrx") format("embedded-opentype"), url("../fonts/icomoon.woff?-cyoqrx") format("woff"), url("../fonts/icomoon.ttf?-cyoqrx") format("truetype"), url("../fonts/icomoon.svg?-cyoqrx#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-piq85b");
+  src: url("../fonts/icomoon.eot?#iefix-piq85b") format("embedded-opentype"), url("../fonts/icomoon.woff?-piq85b") format("woff"), url("../fonts/icomoon.ttf?-piq85b") format("truetype"), url("../fonts/icomoon.svg?-piq85b#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?-cyoqrx");
-  src: url("../fonts/icomoon.eot?#iefix-cyoqrx") format("embedded-opentype"), url("../fonts/icomoon.woff?-cyoqrx") format("woff"), url("../fonts/icomoon.ttf?-cyoqrx") format("truetype"), url("../fonts/icomoon.svg?-cyoqrx#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?-piq85b");
+  src: url("../fonts/icomoon.eot?#iefix-piq85b") format("embedded-opentype"), url("../fonts/icomoon.woff?-piq85b") format("woff"), url("../fonts/icomoon.ttf?-piq85b") format("truetype"), url("../fonts/icomoon.svg?-piq85b#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -47,6 +47,27 @@ a {
   a:hover {
     color: #29627e;
     text-decoration: underline; }
+  a.back-to-top {
+    float: right; }
+    a.back-to-top:before {
+      font-family: "icomoon";
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-right: 5px;
+      content: "\e611"; }
+    @media (min-width: 60em) {
+      a.back-to-top {
+        display: inline-block;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        overflow: hidden; } }
 
 article {
   margin-bottom: 20px; }
@@ -85,7 +106,9 @@ header {
     header {
       float: left;
       margin-left: 5%;
-      width: 30%; } }
+      width: 30%; }
+      header a.back-to-top {
+        display: none; } }
   header .avatar {
     display: inline-block;
     background: white;
@@ -233,7 +256,9 @@ header {
       float: left;
       margin-left: 5%;
       width: 30%;
-      font-size: 80%; } }
+      font-size: 80%; }
+      #education a.back-to-top {
+        display: none; } }
   #education h2:before {
     font-family: "icomoon";
     speak: none;
@@ -274,7 +299,9 @@ header {
       float: left;
       margin-left: 5%;
       width: 30%;
-      font-size: 80%; } }
+      font-size: 80%; }
+      #skills a.back-to-top {
+        display: none; } }
   #skills h2:before {
     font-family: "icomoon";
     speak: none;

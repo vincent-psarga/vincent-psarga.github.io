@@ -9,7 +9,7 @@
 		<title>{{ about.name }} - {{ about.title}}</title>
 	</head>
 	<body>
-		<header>
+		<header id="about">
 			<img class="avatar" src="{{ about.avatar}} " alt="" />
 			<h1>{{ about.name }}</h1>
 			<span class="headline">{{ about.title }}</span>
@@ -57,6 +57,7 @@
 				<article>
 					{{{md resume.body }}}
 				</article>
+				<a title="{{misc.back_to_top}}" href="#about" class="back-to-top">{{misc.back_to_top}}</a>
 			</section>
 
 			<section id="experience">
@@ -76,6 +77,7 @@
 					</ul>
 				</article>
 				{{/each_values}}
+				<a title="{{misc.back_to_top}}" href="#about" class="back-to-top">{{misc.back_to_top}}</a>
 			</section>
 
 			<section id="skills">
@@ -86,6 +88,7 @@
 					<dd>{{join this.body ', '}}</dd>
 				{{/each}}
 				</dl>
+				<a title="{{misc.back_to_top}}" href="#about" class="back-to-top">{{misc.back_to_top}}</a>
 			</section>
 
 			<section id="education">
@@ -97,11 +100,13 @@
 					<span class="where-{{this.where-uid}}">{{ this.where.name}} </span>
 				</article>
 				{{/each_values}}
+				<a title="{{misc.back_to_top}}" href="#about" class="back-to-top">{{misc.back_to_top}}</a>
 			</section>
 
 			<section id="hobbies">
 				<h2>{{ hobbie.title }}</h2>
 				{{{md hobbie.body }}}
+				<a title="{{misc.back_to_top}}" href="#about" class="back-to-top">{{misc.back_to_top}}</a>
 			</section>
 		</main>
 		<footer>
