@@ -6,6 +6,7 @@ require './lib/context_maker'
 class CommandLine
   def initialize(args)
     @selected = []
+    @lang = nil
     parse_options(args)
   end
 
@@ -61,6 +62,10 @@ class CommandLine
         @selected = available_options.map {|option| option[:key]}
       end
 
+      opts.on('-l', "--lang=LANG", String, "Select language") do |lang|
+        @lang = lang
+      end
+
       opts.on_tail("-h", "--help", "Show this message") do
         puts opts
         exit
@@ -70,7 +75,7 @@ class CommandLine
   end
 
   def show
-    @context = ContextMaker.new().context
+    @context = ContextMaker.new(@lang).context
     available_options.each do |option|
       if @selected.include?(option[:key])
         self.send("show_#{option[:key]}")
