@@ -87,9 +87,9 @@ hobbie:
     Je pratique également les arts martiaux historiques européens (principalement l'épée longue et la hache d'arme) ainsi que la reconstitution au sein de l'association Ad Honores.
 
 keywords:
-  continuous-integration: "Intégration continue"
-  continuous-deployement: "Déploiement continu"
-  test-generation: "Génération de tests"
+  "Continuous integration": "Intégration continue"
+  "Continuous deployement": "Déploiement continu"
+  "Test generation": "Génération de tests"
   components: composants
   Langs: Langues
   French: Français

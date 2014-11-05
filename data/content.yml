@@ -95,8 +95,8 @@ experience:
         - DevOps
         - Puppet
         - open-source
-        - continuous-integration
-        - continuous-deployement
+        - Continuous integration
+        - Continuous deployement
     4:
       title: "Web developer(Plone, Django)"
       body: |
@@ -148,7 +148,7 @@ experience:
         - Python
         - Java
         - Web Services
-        - test-generation
+        - Test generation
         - UML
         - Test Designer
     2:
