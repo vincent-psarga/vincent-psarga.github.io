@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require './lib/command_line.rb'
+
+CommandLine.new(ARGV).show
