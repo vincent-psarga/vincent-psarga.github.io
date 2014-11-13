@@ -4,14 +4,12 @@
   src: url("../fonts/icomoon.eot?#iefix-piq85b") format("embedded-opentype"), url("../fonts/icomoon.woff?-piq85b") format("woff"), url("../fonts/icomoon.ttf?-piq85b") format("truetype"), url("../fonts/icomoon.svg?-piq85b#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?-piq85b");
   src: url("../fonts/icomoon.eot?#iefix-piq85b") format("embedded-opentype"), url("../fonts/icomoon.woff?-piq85b") format("woff"), url("../fonts/icomoon.ttf?-piq85b") format("truetype"), url("../fonts/icomoon.svg?-piq85b#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .location:before {
   font-family: "icomoon";
   speak: none;
